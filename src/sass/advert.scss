@@ -1,0 +1,181 @@
+// 广告页面css
+.view {
+    padding: 0 25px;
+    width: 100%;
+    height: 100%;
+}
+
+// 顶部开始
+.head {
+    width: 100%;
+    height: 42px;
+    font-size: 13px;
+    padding: 10px;
+    margin-left: 5px;
+    a {
+        color: #666;
+    }
+}
+
+// 顶部结束
+// 主要内容区开始
+.biaoge {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    border: 1px solid #ddd;
+    margin-top: 21px;
+    margin-left: -1px;
+    font-size: 12px; // 表格里面开始
+    .table-advert {
+        padding: 14px 20px;
+        width: 100%;
+        height: 100%; // 上面第一个小模块
+        .one {
+            display: flex;
+            justify-content: space-between; // 第一个模块的第一列
+            .col1 {
+                margin-left: 1%;
+                .top {
+                    margin-top: 12px;
+                    display: flex;
+                    span {
+                        min-width: 70px;
+                    }
+                    input {
+                        margin-left: 3px;
+                        width: 70%;
+                        height: 28px;
+                        min-width: 50%;
+                        margin-top: -5px;
+                        box-shadow: 2px 0 1px 1px rgba(0, 0, 0, 0.15);
+                    }
+                }
+                .bottom {
+                    display: flex;
+                    margin-top: 20px;
+                    span {
+                        min-width: 60px;
+                    }
+                    select {
+                        margin-top: -5px;
+                        margin-left: 14px;
+                        width: 70%;
+                        min-width: 50%;
+                        height: 28px;
+                        font-size: 12px;
+                        padding: 3px;
+                        box-shadow: 2px 0 1px 1px rgba(0, 0, 0, 0.15);
+                    }
+                }
+            } // 第一个模块的第二列
+            .col2 {
+                margin-left: 1%;
+                .top {
+                    margin-top: 12px;
+                    display: flex;
+                    span {
+                        min-width: 60px;
+                    }
+                    input {
+                        min-width: 60%;
+                        height: 28px;
+                        margin-top: -5px;
+                        box-shadow: 2px 0 1px 1px rgba(0, 0, 0, 0.15);
+                    }
+                }
+                .bottom {
+                    display: flex;
+                    margin-top: 20px;
+                    span {
+                        min-width: 60px;
+                    }
+                    select {
+                        margin-top: -5px;
+                        min-width: 60%;
+                        height: 28px;
+                        font-size: 12px;
+                        padding: 3px;
+                        box-shadow: 2px 0 1px 1px rgba(0, 0, 0, 0.15);
+                    }
+                }
+            } // 第一个模块的第三列
+            // 上下两个框我写的反的
+            .col3 {
+                margin-left: 1%;
+                .top {
+                    display: flex;
+                    margin-top: 20px;
+                    span {
+                        min-width: 60px;
+                    }
+                    input {
+                        min-width: 60%;
+                        height: 28px;
+                        margin-top: -5px;
+                        box-shadow: 2px 0 1px 1px rgba(0, 0, 0, 0.15);
+                    }
+                }
+                .bottom {
+                    display: flex;
+                    margin-top: 10px;
+                    span {
+                        min-width: 60px;
+                    }
+                    select {
+                        margin-top: -5px;
+                        min-width: 60%;
+                        height: 28px;
+                        font-size: 12px;
+                        padding: 3px;
+                        box-shadow: 2px 0 1px 1px rgba(0, 0, 0, 0.15);
+                    }
+                }
+            } // 搜索框框
+            .search {
+                margin-top: 5px;
+                margin: 5px 10px 0;
+                .btn {
+                    width: 72px;
+                    height: 72px;
+                    background: #eb5635;
+                    i {
+                        font-size: 30px;
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    } // ID的表头
+    .thd {
+        margin-top: 30px;
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+        .line {
+            display: flex;
+            justify-content: space-between;
+            div {
+                margin: 1%;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    } // 审核按钮
+    .audit {
+        margin-top: 20px;
+        button {
+            color: #666;
+            height: 36px;
+            margin-right: 8px;
+            i {
+                margin-right: 4px;
+            }
+        }
+        button:hover {
+            background: #eb5635;
+            color: #fff;
+        }
+    }
+}
+
+// 主要内容区结束

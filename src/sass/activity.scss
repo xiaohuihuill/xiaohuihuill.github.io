@@ -1,0 +1,75 @@
+// 活动中心页面css
+.view {
+    padding: 0 25px;
+    width: 100%;
+    height: 100%;
+}
+
+// 顶部开始
+.head {
+    width: 100%;
+    height: 42px;
+    font-size: 13px;
+    padding: 10px;
+    margin-left: 5px;
+    a {
+        color: #666;
+    }
+}
+
+// 顶部结束
+// 主要内容区开始
+.biaoge {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    border: 1px solid #ddd;
+    margin-top: 21px;
+    margin-left: -1px;
+    .table-activity {
+        height: 100%;
+        width: 100%;
+        // 两个按钮
+        .one {
+           padding: 10px 20px;
+           border-bottom:1px solid#ddd;
+             :first-child {
+                background: #eb5635;
+                color: #fff;
+            }
+            button {
+                margin-left: 10px;
+                color: #666;
+                height: 36px;
+                width: 92px;
+                margin-right: 8px;
+                i {
+                    margin-right: 4px;
+                }
+            }
+            button:hover {
+                border: none;
+                background: #eb5635;
+                color: #fff;
+            }
+        }
+        // 下面的thd
+        .thd_activity {
+        margin-top: 30px;
+        padding: 10px;
+        .line {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid #ddd;
+            div {
+                margin: 1%;
+                font-size: 14px;
+                font-weight: 700;
+            }
+        }
+    }
+    }
+}
+
+
+// 主要内容区结束
