@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <!-- ie让页面 按照edge这个版本 来渲染 主要针对的是ie浏览器  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口属性 -->
+    <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no;">
+    <title>易信发</title>
+    <!-- Bootstrap -->
+    <link href="./js/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- 样式中 可能会覆盖bootstap的一些样式 所以后倒入 -->
+    <link rel="stylesheet" href="./css/baseIndex.css" />
+    <!-- 样式中 可能会覆盖bootstap的一些样式 所以后倒入 -->
+    <link rel="stylesheet" href="./css/yxf.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- 条件注释 小于 ie9 -->
+    <!--html5shiv html5 新语义标签-->
+    <!-- 如果想要下载到本地 可以去  github-->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!--  为了方便管理 最外层套一个容器 -->
+    <div class="yxf-layout container-fluid">
+        <!--顶部背景-->
+        <div class="yxf-bg hidden-xs">
+            <img src="./images/imgs/bannerdada.png" alt="">
+        </div>
+        <div class="yxf-bg-two visible-xs">
+            <img src="./images/imgs/smallbanner.jpg" alt="">
+        </div>
+        <!--<div class="banner-consult hidden-xs hidden-sm">
+            <div class="quanquan"><i class="iF iF-quanquan"></i></div>
+            <div class="consult-rexian">
+                <div class="consult-rexian-tubiao display"><i class="iF iF-dianhua"></i></div>
+                <div class="consult-rexian-dianhua display">全国咨询电话</div>
+            </div>
+            <div class="consult-rexian-number">
+                0755-23575567
+            </div>
+            <div class="consult-rexian-QQ"><span><a target="-blank" style="color:#f04d1c" href="http://wpa.qq.com/msgrd?v=3&uin=3174887172&site=qq&menu=yes">在线QQ咨询</a></span></div>
+        </div>-->
+        <!--头部导航-->
+        <div class="yxf-header" id="yxf-header">
+            <nav class="navbar navbar-default" id="yxf-navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand clearfix" href="./yxf.html">
+                            <div class="fl">
+                                <i class="iF iF-yixinfa" id="yxf-fonts-one"></i>
+                            </div>
+                            <div class="fr">
+                                <i class="iF iF-yxf" id="yxf-fonts-two"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" id="nav">
+                            <li>
+                                <a href="http://www.eselltech.com/cooperation.html">合作案例
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <!--<li>
+                                <a href="#">代理合作</a>
+                            </li>
+                            <li>
+                                <a href="#">套餐资费</a>
+                            </li>-->
+                            <li>
+                                <a href="./index.html">易售官网</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="yxf-info hidden-xs hidden-sm">
+                <h3 id="yxf-info-h3" class="slideInUp2">易信发</h3>
+                <p id="yxf-info-p1" class="slideInUp3">最专业的云信息发布系统</p>
+                <p id="yxf-info-p2" class="slideInUp4">高效快捷,批量管理，轻松分屏</p>
+                <p id="yxf-info-p3" class="slideInUp5">屏幕闲时轻松变现，让广告收入最大化</p>
+                <a href="javascript:;" id="yxf-info-a" class="slideInUp6">
+                    <span>立即使用</span>
+                </a>
+            </div>
+
+        </div>
+        <!--核心优势-->
+        <div class="yxf-advantage" id="yxf-advantage">
+            <!--title优势-->
+            <div class="yxf-advantage-titel" id="yxf-advantage-animation">
+                <h3 id="yxf-advantage-first-line">核心优势</h3>
+                <div class="line clearfix" id="yxf-advantage-second-line">
+                    <div class="one fl"></div>
+                    <div class="two fl"></div>
+                </div>
+            </div>
+            <!--大屏-->
+            <div class="container-fluid visible-lg " id="yxf-advantage-all-ele">
+                <div class="row" id="yxf-advantage-all">
+                    <div class="col-md-1">
+                    </div>
+                    <div class="yxf-advantage-one col-md-2">
+                        <div id="box-upslope"></div>
+                        <h4>低成本</h4>
+                        <p>
+                            <i class="iF iF-dot"></i>省钱</p>
+                        <p>
+                            <i class="iF iF-dot"></i>省力</p>
+                        <p>
+                            <i class="iF iF-dot"></i>省时间</p>
+                    </div>
+                    <div class="yxf-advantage-two col-md-2">
+                        <div></div>
+                        <h4>方便极简</h4>
+                        <p>
+                            <i class="iF iF-dot"></i>PC/移动端管理</p>
+                        <p>
+                            <i class="iF iF-dot"></i>远程控制</p>
+                        <p>
+                            <i class="iF iF-dot"></i>自定义分屏</p>
+                    </div>
+                    <div class="yxf-advantage-three col-md-2">
+                        <div></div>
+                        <h4>大数据</h4>
+                        <p>
+                            <i class="iF iF-dot"></i>多维度数据报表</p>
+                        <p>
+                            <i class="iF iF-dot"></i>轻松监控广告数据</p>
+                        <p>
+                            <i class="iF iF-dot"></i>一目了然</p>
+                    </div>
+                    <div class="yxf-advantage-four col-md-2">
+                        <div></div>
+                        <h4>安全可靠</h4>
+                        <p>
+                            <i class="iF iF-dot"></i>无限量云存储</p>
+                        <p>
+                            <i class="iF iF-dot"></i>物联网云技术</p>
+                        <p>
+                            <i class="iF iF-dot"></i>分布式软件架构</p>
+                    </div>
+                    <div class="yxf-advantage-five col-md-2">
+                        <div></div>
+                        <h4>闲时变现</h4>
+                        <p>
+                            <i class="iF iF-dot"></i>设备可设置为公有</p>
+                        <p>
+                            <i class="iF iF-dot"></i>请求来自易售的广告</p>
+                        <p>
+                            <i class="iF iF-dot"></i>轻松变现</p>
+                    </div>
+                    <div class="col-md-1">
+                    </div>
+                </div>
+            </div>
+            <!--小屏-->
+            <div class="container-fluid small hidden-lg">
+                <div class="row">
+                    <div class="one clearfix col-md-6 col-sm-6 col-sm-12" id="one">
+                        <div class="left fl"></div>
+                        <div class="right fl">
+                            <h4>低成本</h4>
+                            <p>
+                                <i class="iF iF-dot"></i>省钱</p>
+                            <p>
+                                <i class="iF iF-dot"></i>省力</p>
+                            <p>
+                                <i class="iF iF-dot"></i>省时间</p>
+                        </div>
+                    </div>
+                    <div class="two clearfix col-md-6 col-sm-6 col-sm-12" id="one">
+                        <div class="left fl"></div>
+                        <div class="right fl">
+                            <h4>方便极简</h4>
+                            <p>
+                                <i class="iF iF-dot"></i>PC/移动端管理</p>
+                            <p>
+                                <i class="iF iF-dot"></i>远程控制</p>
+                            <p>
+                                <i class="iF iF-dot"></i>自定义分屏</p>
+                        </div>
+                    </div>
+                    <div class="three clearfix col-md-6 col-sm-6 col-sm-12" id="one">
+                        <div class="left fl"></div>
+                        <div class="right fl">
+                            <h4>大数据</h4>
+                            <p>
+                                <i class="iF iF-dot"></i>多维度数据报表</p>
+                            <p>
+                                <i class="iF iF-dot"></i>轻松监控广告数据</p>
+                            <p>
+                                <i class="iF iF-dot"></i>一目了然</p>
+                        </div>
+                    </div>
+                    <div class="four clearfix col-md-6 col-sm-6 col-sm-12" id="one">
+                        <div class="left fl"></div>
+                        <div class="right fl">
+                            <h4>安全可靠</h4>
+                            <p>
+                                <i class="iF iF-dot"></i>无限量云存储</p>
+                            <p>
+                                <i class="iF iF-dot"></i>物联网云技术</p>
+                            <p>
+                                <i class="iF iF-dot"></i>分布式软件架构</p>
+                        </div>
+                    </div>
+                    <div class="five clearfix col-md-6 col-sm-6 col-sm-12" id="one">
+                        <div class="left fl"></div>
+                        <div class="right fl">
+                            <h4>闲时变现</h4>
+                            <p>
+                                <i class="iF iF-dot"></i>设备可设置为公有</p>
+                            <p>
+                                <i class="iF iF-dot"></i>请求来自易售的广告</p>
+                            <p>
+                                <i class="iF iF-dot"></i>轻松变现</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--成本-->
+        <div class="yxf-costing" id="costing">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="yxf-costing-info col-lg-6 col-md-12">
+                        <div id="yxf-costing-info">
+                            <h3 id="costing-first-line">易信发帮您大幅度降低媒体运营成本</h3>
+                            <h5 id="costing-second-line">高性价比，&nbsp;0&nbsp;成本运维</h5>
+                            <div class="visible-lg" id="yxf-costing-info-two">
+                                <p id="costing-third-line">省钱：使用易信发，每年中断设备至少可
+                                    <span class="color">节省500元</span>
+                                </p>
+                                <p id="costing-four-line">
+                                    <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;</i>无需企业自建服务器，
+                                    <span class="color">省1万</span>
+                                </p>
+                                <p id="costing-five-line">
+                                    <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;·&nbsp;</i>无需技术人员维护，
+                                    <span class="color">省10万</span>
+                                </p>
+                                <p id="costing-six-line">省力：云平台，助您彻底摆脱部署，运维和升级困扰，云端管理、免费升级</p>
+                                <p id="costing-senver-line">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;化繁为简，功能直观，系统操作简单，上手容易，会上网就会用易信发</p>
+                                <p id="costing-eight-line">省心：有问题找易售，
+                                    <span class="color">7x24小时</span>电话服务，随时为客户提供解忧排难</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="yxf-costing-map col-lg-6 col-md-12" id="yxf-costing-map">
+                        <div>
+                            <img class="img" src="./images/imgs/smallone1.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--操作-->
+        <div class="yxf-operation" id="yxf-operation">
+            <h3 id="yxf-operation-first-line"><span>操作方便快捷</span></h3>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="yxf-operation-left col-lg-6 col-md-12" id="yxf-operation-left">
+                        <img class="img" src="./images/imgs/smalltwo1.png" alt="">
+                        <p id="yxf-operation-second-line">支持PC/微信公众号双平台操作</p>
+                        <p id="yxf-operation-third-line">无需下载APP</p>
+                    </div>
+                    <div class="yxf-operation-right col-lg-6 col-md-12" id="yxf-operation-right">
+                        <img class="img" src="./images/imgs/smallthree1.png" alt="">
+                        <p id="yxf-operation-four-line">手机扫一扫快速添加设备</p>
+                        <p id="yxf-operation-five-line">也可PC端手动极速添加</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--模板-->
+        <div class="yxf-template" id="yxf-template">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="yxf-template-left col-lg-6 col-md-12 hidden-xs">
+                        <img class="img" src="./images/imgs/smallfour1.png" alt="">
+                    </div>
+                    <div class="yxf-template-right col-lg-6 col-md-12" id="yxf-template-right">
+                        <h3 id="yxf-template-first-line">系统自带多种分屏模板，</h3>
+                        <h3 id="yxf-template-second-line">也可自定义设置模板</h3>
+                        <p class="color" id="yxf-template-third-line">预设模板
+                            <i>&nbsp;·&nbsp;</i>一键调用：</p>
+                        <p id="yxf-template-four-line">软件自带丰富模板，一键调用实现广告快速发布</p>
+                        <p class="color" id="yxf-template-five-line">自定义模板
+                            <i>&nbsp;·&nbsp;</i>随心编辑：</p>
+                        <p id="yxf-template-six-line">满足多样性需求，所见即所得，轻松实现自定义展示效果</p>
+                    </div>
+                    <div class="yxf-template-left col-lg-6 col-md-12 visible-xs">
+                        <img class="img" src="./images/imgs/smallfour1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--素材-->
+        <div class="yxf-material" id="yxf-material">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="yxf-material-info col-lg-6 col-md-12" id="yxf-material-info">
+                        <h3 id="yxf-material-first-line">素材库持续更新，海量素材供您随心调用</h3>
+                        <p id="yxf-material-second-line">海量素材陆续上线中，丰富行业模板满足客户多种需求，告别</p>
+                        <p id="yxf-material-thrid-line">美工时代，人人都是设计师</p>
+                    </div>
+                    <div class="yxf-material-map col-lg-6 col-md-12">
+                        <img class="img" src="./images/imgs/smallfive1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--设备监控-->
+        <div class="yxf-equipment-monitoring" id="yxf-equipment-monitoring">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="yxf-equipment-monitoring-left col-lg-6 col-md-12 hidden-xs" id="yxf-equipment-monitoring-left">
+                        <img class="img" src="./images/imgs/smallsix1.png" alt="">
+                    </div>
+                    <div class="yxf-equipment-monitoring-right col-lg-6 col-md-12" id="yxf-equipment-monitoring-right">
+                        <h3 id="yxf-equipment-monitoring-first-line">远程设备监控，异常及时报警</h3>
+                        <p class="color" id="yxf-equipment-monitoring-second-line">远程设备监控：</p>
+                        <p id="yxf-equipment-monitoring-thrid-line">无需繁琐内容制作，软件自带丰富模板，只需点击模板广告位</p>
+                        <p id="yxf-equipment-monitoring-four-line">上传对应素材</p>
+                        <p class="color" id="yxf-equipment-monitoring-five-line">屏幕定时截图：</p>
+                        <p id="yxf-equipment-monitoring-six-line">实时监测播放状态，投播进程清晰可见</p>
+                    </div>
+                    <div class="yxf-equipment-monitoring-left col-lg-6 col-md-12 visible-xs" id="yxf-equipment-monitoring-left">
+                        <img class="img" src="./images/imgs/smallsix1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--变现-->
+        <div class="yxf-realization" id="yxf-realization">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="yxf-realization-info col-lg-6 col-md-12" id="yxf-realization-info">
+                        <h3 id="yxf-realization-first-line">易信发给您带来广告主，</h3>
+                        <h3 id="yxf-realization-second-line">让闲置的屏幕资源轻松变现</h3>
+                        <p id="yxf-realization-thrid-line">只要将设备设置成公有设备</p>
+                        <p id="yxf-realization-four-line">提供空闲时间段，即可请求播放来自易售的广告</p>
+                        <p id="yxf-realization-five-line">广告一键审核，广告收益一目了然，轻松提现</p>
+                    </div>
+                    <div class="yxf-realization-map col-lg-6 col-md-12">
+                        <img class="img" src="./images/imgs/smallserven1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--大数据-->
+        <div class="yxf-big-data" id="yxf-big-data">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="yxf-big-data-left col-lg-6 col-md-12 hidden-xs">
+                        <img class="img" src="./images/imgs/smalleight1.png" alt="">
+                    </div>
+                    <div class="yxf-big-data-right col-lg-6 col-md-12" id="yxf-big-data-right">
+                        <h3 id="yxf-big-data-first-line">大数据处理，报表清晰，一切尽在掌握</h3>
+                        <p id="yxf-big-data-second-line">专业的广告展现量数据统计形式，让用户清晰明了的查看各个</p>
+                        <p id="yxf-big-data-thrid-line">时段的广告数据展现量，支持数据展现量报表下载，支持用户</p>
+                        <p id="yxf-big-data-four-line">查看操作日志</p>
+                    </div>
+                    <div class="yxf-big-data-left col-lg-6 col-md-12 visible-xs">
+                        <img class="img" src="./images/imgs/smalleight1.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--安全可靠-->
+        <div class="yxf-safe-and-reliable visible-lg" id="yxf-safe-and-reliable">
+            <div class="yxf-safe-and-reliable-titel" id="yxf-safe-and-reliable-titel">
+                <h3 id="yxf-safe-and-reliable-first-line">易信发全方位安全可靠</h3>
+                <div class="line clearfix" id="yxf-safe-and-reliable-second-line">
+                    <div class="one fl"></div>
+                    <div class="two fl"></div>
+                </div>
+            </div>
+            <div class="container-fluid visible-lg">
+                <div class="row" id="yxf-safe-and-reliable-all-ele">
+                    <div class="yxf-safe-and-reliable-one col-md-4">
+                        <div></div>
+                        <h4>终端安全</h4>
+                        <p>权限认证，通道加密，数据指纹</p>
+                        <p>保证终端安全播放</p>
+                    </div>
+                    <div class="yxf-safe-and-reliable-two col-md-4">
+                        <div></div>
+                        <h4>数据安全</h4>
+                        <p>
+                            云服务器可存储海量数据</p>
+                        <p>
+                            数据安全，不担心丢失</p>
+                    </div>
+                    <div class="yxf-safe-and-reliable-three col-md-4">
+                        <div></div>
+                        <h4>架构安全</h4>
+                        <p>
+                            服务器架构-读写模块分离</p>
+                        <p>
+                            确保系统高效运行流畅</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部大屏-->
+        <div class="footer visible-lg visible-md visible-sm" id="footer">
+            <div class="particulars clearfix">
+                <div class="left fl" style="width:70%;">
+                    <div class="clearfix">
+                        <div class="About-us fl" style="width:20%;">
+                            <div class="About-us-one">关于我们</div>
+                            <div class="About-us-two">
+                                <a href="http://www.eselltech.com/introduce.html">-公司简介</a>
+                            </div>
+                            <div class="About-us-three">
+                                <a href="http://www.eselltech.com/contact.html">-联系我们</a>
+                            </div>
+                        </div>
+                        <div class="product-center fl" style="width:20%;">
+                            <div class="product-center-one">产品中心</div>
+                            <div class="product-center-two">
+                                <a href="http://www.pingxiaobao.com/">-屏效宝</a>
+                            </div>
+                            <div class="product-center-three">
+                                <a href="http://www.yixinfa.cn/">-易信发</a>
+                            </div>
+                        </div>
+                        <div class="case fl" style="width:20%;">合作案例</div>
+                    </div>
+                </div>
+                <div class="right fr" style="width:30%;">
+                    <div class="clearfix">
+                        <div class="hot-line fl"></div>
+                        <div class="fr">咨询电话&nbsp;:&nbsp;0755-23575567</div>
+                    </div>
+                </div>
+            </div>
+            <div class="address">
+                <div class="base">Copyright
+                    <span>&nbsp;©&nbsp;</span>&nbsp;2016&nbsp;易售科技&nbsp;All&nbsp;Rights&nbsp;Reserved.&nbsp;粤&nbsp;ICP&nbsp;备&nbsp;16027434&nbsp;号&nbsp;-2&nbsp;地址&nbsp;:&nbsp;广东省宝安区航城大道航城创新创业园&nbsp;A1&nbsp;栋&nbsp;3A05&nbsp;室</div>
+            </div>
+        </div>
+        <!--底部小屏-->
+        <div class="footer-small visible-xs" id="footer-small">
+            <div class="particulars">
+                <div class="left">
+                    <div class="clearfix">
+                        <div class="About-us clearfix">
+                            <div class="About-us-one fl">关于我们</div>
+                            <div class="About-us-two fl">
+                                <a href="http://www.eselltech.com/introduce.html">-公司简介</a>
+                            </div>
+                            <div class="About-us-three fl">
+                                <a href="http://www.eselltech.com/contact.html">-联系我们</a>
+                            </div>
+                        </div>
+                        <div class="product-center clearfix">
+                            <div class="product-center-one fl">产品中心</div>
+                            <div class="product-center-two fl">
+                                <a href="http://www.pingxiaobao.com/">-屏效宝</a>
+                            </div>
+                            <div class="product-center-three fl color">
+                                <a href="http://www.yixinfa.cn/">-易信发</a>
+                            </div>
+                        </div>
+                        <div class="case fl">合作案例</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>咨询电话&nbsp;:&nbsp;0755-23575567</p>
+                </div>
+            </div>
+            <div class="address">
+                <div class="base">
+                    <p>Copyright&nbsp;2016&nbsp;易售科技</p>
+                    <p>All&nbsp;Rights&nbsp;Reserved.&nbsp;粤&nbsp;ICP&nbsp;备&nbsp;16027434&nbsp;号&nbsp;-2&nbsp;</p>
+                    <p>地址&nbsp;:&nbsp;广东省宝安区航城大道航城创新创业园&nbsp;A1&nbsp;栋&nbsp;3A05&nbsp;室</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/jquery/jquery-2.2.0.min.js"></script>
+<script src="./js/bootstrap/bootstrap.min.js"></script>
+<script>
+    /**
+     * 判断是否是pc设备
+     */
+    function page() {
+        if ((navigator.userAgent.match(
+                /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+            ))) {
+            return "yd"
+        } else {
+            return "pc"
+        }
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // 封装动画
+        function animation(id, changeId, AnimationName) {
+            var height = document.getElementById(id).offsetTop + 120;
+            if (height >= $(window).scrollTop() && height < ($(window).scrollTop() + $(window).height())) {
+                if ($("#" + changeId).children().length <= 2) $("#" + changeId).children().addClass(
+                    AnimationName + 3);
+                $("#" + changeId).children().each(function (i, v) {
+                    $(v).addClass(AnimationName + (i + 1));
+                });
+            }
+        }
+        if (page() === "pc") {
+            // 进入页面执行一次的动画
+            // 暂时没有做截流，没有做到可视区后运行该区域函数，后期优化
+            $(window).scroll(function () {
+                // 优势
+                animation("yxf-advantage", "yxf-advantage-animation", "slideInUp");
+                animation("yxf-advantage", "yxf-advantage-all", "slideInUp");
+                // 成本动画
+                animation("costing", "yxf-costing-info", "slideInUp");
+                animation("costing", "yxf-costing-info-two", "slideInUp");
+                //操作
+                animation("yxf-operation", "yxf-operation-first-line", "slideInUp");
+                //模板
+                animation("yxf-template", "yxf-template-right", "slideInUp");
+                // 素材
+                animation("yxf-material", "yxf-material-info", "slideInUp");
+                // 设备监控
+                animation("yxf-equipment-monitoring", "yxf-equipment-monitoring-right",
+                    "slideInUp");
+                // 提现
+                animation("yxf-realization", "yxf-realization-info", "slideInUp");
+                // 大数据
+                animation("yxf-big-data", "yxf-big-data-right", "slideInUp");
+                //  安全可靠
+                animation("yxf-safe-and-reliable", "yxf-safe-and-reliable-titel", "slideInUp");
+                animation("yxf-safe-and-reliable", "yxf-safe-and-reliable-all-ele", "slideInUp");
+            });
+
+            // hover盒子往上
+            function box_upslope(className) {
+                $(className).hover(function () {
+                    $(this).stop().animate({
+                        "marginTop": -20
+                    }, 500);
+                }, function () {
+                    $(this).stop().animate({
+                        "marginTop": 0
+                    }, 500);
+                });
+            }
+            box_upslope("#yxf-advantage-all-ele .col-md-2");
+            box_upslope("#yxf-safe-and-reliable-all-ele .col-md-4");
+        }
+    });
+</script>

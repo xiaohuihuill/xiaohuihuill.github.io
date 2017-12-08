@@ -1,0 +1,1105 @@
+.yxf-layout {
+    padding-left: 0;
+    padding-right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.banner-consult {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    width: 170px;
+    height: 200px;
+    color: #fff;
+    text-align: center;
+    background-color: #f04d1c;
+    opacity: .9;
+    font-size: 18px;
+    .quanquan {
+        height: 85px;
+        line-height: 85px;
+        i {
+            font-size: 90px;
+        }
+    }
+    .consult-rexian {
+        height: 45px;
+        line-height: 45px;
+        box-sizing: border-box;
+        .consult-rexian-tubiao {
+            height: 45px;
+            i {
+                font-size: 35px;
+            }
+        }
+        .consult-rexian-dianhua {
+            font-size: 16px;
+            margin-right: 8px;
+            height: 45px;
+            vertical-align: super;
+        }
+    }
+    .consult-rexian-QQ {
+        margin-top: 5px;
+        color: #f04d1c;
+        span {
+            height: 30px;
+            line-height: 30px;
+            display: inline-block;
+            width: 80%;
+            background-color: #fff;
+        }
+    }
+}
+
+.yxf-bg {
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+.yxf-bg-two {
+    overflow: hidden;
+    img {
+        width: 100%;
+    }
+}
+
+// 导航
+.yxf-header {
+    .yxf-info {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        width: 42%;
+        margin-left: -21%;
+        color: #fff;
+        text-align: center;
+        h3 {
+            font-size: 40px;
+            margin-bottom: 18px;
+        }
+        p {
+            font-size: 22px;
+        }
+        a {
+            margin-top: 20px;
+            display: inline-block;
+            background: rgba(255, 255, 255, .8);
+            border-radius: 4px;
+            width: 150px;
+            height: 40px;
+            line-height: 40px;
+            margin-left: 1%;
+            color: #000;
+        }
+        a:hover {
+            border: 1px solid #fff;
+            background: transparent;
+            color: #fff;
+            transition: all 1s;
+            line-height: 38px;
+        }
+    }
+    #yxf-navbar {
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0;
+        z-index: 11;
+        border: none;
+        background: rgba(0, 0, 0, .4);
+        margin-bottom: 0;
+        a {
+            height: 80px;
+            line-height: 80px;
+            padding-top: 0;
+            padding-bottom: 0; // 去掉背景色
+            background-color: transparent;
+            text-align: center;
+            color: #fff;
+            font-size: 18px;
+        }
+        a:hover {
+            border-bottom: 2px solid red;
+        } // 去掉第一个a标签的hover 底部边框
+        a.navbar-brand:hover {
+            border-bottom: none;
+        } // 设置第一个a标签内部字体的大小 已经颜色
+        a.navbar-brand {
+            .fl i {
+                font-size: 40px;
+                margin-right: 12px;
+            }
+            .fr i {
+                font-size: 26px;
+            }
+        } // 设置汉堡菜单 上下居中
+        .navbar-toggle {
+            margin-top: 24px;
+        }
+        .container-fluid {
+            padding-left: 15%;
+        }
+    }
+    .navbar-default .navbar-toggle {
+        border-color: #fff;
+        .icon-bar {
+            background-color: #fff;
+        }
+    }
+    .navbar-default .navbar-toggle:focus,
+    .navbar-default .navbar-toggle:hover {
+        background-color: transparent;
+    }
+    #nav {
+        padding-left: 100px;
+    }
+}
+
+// 优势
+.yxf-advantage {
+    margin-top: 4%;
+    .yxf-advantage-titel {
+        position: relative;
+        text-align: center;
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .line {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            margin-left: -30px;
+            .one {
+                width: 30px;
+                height: 5px;
+                background-color: #000
+            }
+            .two {
+                width: 30px;
+                height: 5px;
+                background-color: #999;
+            }
+        }
+    }
+    .container-fluid {
+        margin: 6% 0;
+        .row {
+            margin-top: 20px; // 第一个
+            .yxf-advantage-one {
+                div {
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/advantage.png") no-repeat 0 0;
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000;
+                }
+                p {
+                    margin-left: 35%;
+                    color: #787878;
+                }
+            } // 第二个
+            .yxf-advantage-two {
+                div {
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/advantage.png") no-repeat -278px 0;
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000;
+                }
+                p {
+                    margin-left: 25%;
+                    color: #787878;
+                }
+            } // 第三个
+            .yxf-advantage-three {
+                div {
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/advantage.png") no-repeat -538px 0;
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000;
+                }
+                p {
+                    margin-left: 25%;
+                    color: #787878;
+                }
+            } // 第四个
+            .yxf-advantage-four {
+                div {
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/advantage.png") no-repeat -788px 0;
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000;
+                }
+                p {
+                    margin-left: 25%;
+                    color: #787878;
+                }
+            } // 第五个
+            .yxf-advantage-five {
+                div {
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/advantage.png") no-repeat -1050px 0;
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000;
+                }
+                p {
+                    margin-left: 25%;
+                    color: #787878;
+                }
+            }
+        }
+    }
+    .small {
+        .row {
+            .one {
+                width: 50%;
+                .left {
+                    transform: scale(.9);
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/advantage.png") no-repeat 0 0;
+                }
+                .right {
+                    h4 {}
+                    p {}
+                }
+            }
+            .two {
+                width: 50%;
+                .left {
+                    transform: scale(.9);
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/advantage.png") no-repeat -278px 0;
+                }
+                .right {
+                    h4 {}
+                    p {}
+                }
+            }
+            .three {
+                width: 50%;
+                .left {
+                    transform: scale(.9);
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/advantage.png") no-repeat -538px 0;
+                }
+                .right {
+                    h4 {}
+                    p {}
+                }
+            }
+            .four {
+                width: 50%;
+                .left {
+                    transform: scale(.9);
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/advantage.png") no-repeat -788px 0;
+                }
+                .right {
+                    h4 {}
+                    p {}
+                }
+            }
+            .five {
+                width: 50%;
+                .left {
+                    transform: scale(.9);
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/advantage.png") no-repeat -1050px 0;
+                }
+                .right {
+                    h4 {}
+                    p {}
+                }
+            }
+        }
+    }
+}
+
+// 成本
+.yxf-costing {
+    overflow: hidden;
+    padding: 1% 10% 0;
+    background-color: #f8f8f8;
+    .yxf-costing-info {
+        padding: 0;
+        margin-top: 10%;
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        h5 {
+            font-size: 20px;
+        }
+        p {
+            font-size: 18px;
+            color: #787878;
+        }
+    }
+    .yxf-costing-map {
+        margin-top: 5%;
+        text-align: center;
+        overflow: hidden;
+        img {
+            width: 75%;
+        }
+    }
+}
+
+// 操作
+.yxf-operation {
+    text-align: center;
+    padding: 3% 10%;
+    h3 {
+        font-size: 30px;
+        font-weight: bold;
+    }
+    .yxf-operation-left {
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+        p {
+            font-size: 20px;
+        }
+        p:nth-child(2) {
+            margin-top: 20px;
+        }
+    }
+    .yxf-operation-right {
+        overflow: hidden;
+        img {
+            width: 70%;
+        }
+        p {
+            font-size: 20px;
+        }
+        p:nth-child(2) {
+            margin-top: 20px;
+        }
+    }
+}
+
+// 模板
+.yxf-template {
+    padding: 5% 10%;
+    background-color: #f8f8f8;
+    .yxf-template-left {
+        overflow: hidden;
+        img {
+            width: 90%;
+        }
+    }
+    .yxf-template-right {
+        margin-top: 10%;
+        padding-left: 10%;
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            color: #787878;
+        }
+        p:nth-child(5) {
+            color: #f04d1c;
+        }
+        p:nth-child(3) {
+            color: #f04d1c;
+        }
+    }
+}
+
+// 素材
+.yxf-material {
+    padding: 5% 10%;
+    .yxf-material-info {
+        margin-top: 16%;
+        h3 {
+            margin-top: 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            color: #787878;
+        }
+    }
+    .yxf-material-map {
+        text-align: center;
+        overflow: hidden;
+        img {
+            width: 85%;
+        }
+    }
+}
+
+// 设备监听
+.yxf-equipment-monitoring {
+    padding: 2% 10%;
+    background-color: #f8f8f8;
+    .yxf-equipment-monitoring-left {
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+    .yxf-equipment-monitoring-right {
+        padding-left: 6%;
+        padding-top: 15%;
+        h3 {
+            margin-top: 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            color: #787878;
+        }
+        p:nth-child(2) {
+            color: #f04d1c;
+        }
+        p:nth-child(5) {
+            color: #f04d1c;
+        }
+    }
+}
+
+// 变现
+.yxf-realization {
+    padding: 2% 10%;
+    .yxf-realization-info {
+        margin-top: 12%;
+        h3 {
+            margin-top: 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            color: #787878;
+        }
+    }
+    .yxf-realization-map {
+        text-align: center;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+// 大数据
+.yxf-big-data {
+    padding: 6% 10%;
+    background-color: #f8f8f8;
+    .yxf-big-data-left {
+        overflow: hidden;
+        img {
+            width: 100%
+        }
+    }
+    .yxf-big-data-right {
+        padding-left: 5%;
+        margin-top: 12%;
+        h3 {
+            margin-top: 0;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        p {
+            font-size: 18px;
+            color: #787878;
+        }
+    }
+}
+
+// 安全可靠
+.yxf-safe-and-reliable {
+    margin-top: 5%;
+    .yxf-safe-and-reliable-titel {
+        position: relative;
+        text-align: center;
+        h3 {
+            font-size: 30px;
+            font-weight: bold;
+        }
+        .line {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            margin-bottom: 3%;
+            margin-left: -30px;
+            .one {
+                width: 30px;
+                height: 5px;
+                background-color: #000
+            }
+            .two {
+                width: 30px;
+                height: 5px;
+                background-color: #999;
+            }
+        }
+    }
+    .container-fluid {
+        margin: 5% 0;
+        .row {
+            margin-top: 20px; // 第一个
+            .yxf-safe-and-reliable-one {
+                div {
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/safety.png") no-repeat 0 0;
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000;
+                }
+                p {
+                    margin-left: 30%;
+                    color: #787878;
+                }
+            } // 第二个
+            .yxf-safe-and-reliable-two {
+                div {
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/safety.png") no-repeat -473px 0;
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000;
+                }
+                p {
+                    margin-left: 32%;
+                    color: #787878;
+                }
+            } // 第三个
+            .yxf-safe-and-reliable-three {
+                div {
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/safety.png") no-repeat -965px 0;
+                }
+                h4 {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000;
+                }
+                p {
+                    margin-left: 30%;
+                    color: #787878;
+                }
+            }
+        }
+    }
+    .small {
+        .row {
+            .one {
+                width: 42%;
+                .left {
+                    transform: scale(.9);
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/safety.png") no-repeat 0 0;
+                }
+                .right {
+                    h4 {}
+                    p {}
+                }
+            }
+            .two {
+                width: 42%;
+                .left {
+                    transform: scale(.9);
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/safety.png") no-repeat 0 0;
+                }
+                .right {
+                    h4 {}
+                    p {}
+                }
+            }
+            .three {
+                width: 42%;
+                .left {
+                    transform: scale(.9);
+                    margin: 0 auto;
+                    height: 122px;
+                    width: 122px;
+                    background: url("../images/imgs/safety.png") no-repeat 0 0;
+                }
+                .right {
+                    h4 {}
+                    p {}
+                }
+            }
+        }
+    }
+}
+
+// 底部
+
+/*footer-------------begin*/
+
+.footer {
+    padding: 0 5%;
+    height: 300px;
+    width: 100%;
+    background-color: #231816;
+    box-sizing: border-box;
+    padding: 0 12.5%;
+    color: #fff;
+}
+
+.footer .particulars {
+    font-size: 18px;
+    padding-top: 50px;
+    height: 250px;
+    box-sizing: border-box;
+}
+
+.footer .address {
+    height: 50px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.About-us .About-us-one {
+    font-size: 18px;
+}
+
+.About-us .About-us-two {
+    margin-top: 30px;
+}
+
+.product-center .product-center-two {
+    margin-top: 30px;
+}
+
+.product-center .product-center-three a {
+    color: #f04d1c;
+}
+
+.particulars a {
+    color: #fff;
+    font-size: 16px;
+}
+
+.particulars a:hover {
+    color: #f04d1c;
+}
+
+.particulars .hot-line {
+    width: 1px;
+    height: 110px;
+    background-color: #fff;
+}
+
+
+/*footer-------------end*/
+
+.img {
+    transition: all 2s;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+    #yxf-header {
+        .navbar {
+            height: 50px;
+            .container-fluid {
+                height: 50px;
+                padding-left: 10px;
+                a {
+                    height: 50px;
+                    line-height: 50px;
+                }
+                .navbar-header {
+                    height: 50px;
+                    .navbar-toggle {
+                        margin-top: 8px;
+                        padding: 6px 8px;
+                    }
+                    .navbar-brand {
+                        #yxf-fonts-one {
+                            font-size: 26px;
+                        }
+                        #yxf-fonts-two {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                #bs-example-navbar-collapse-1 {
+                    background: rgba(0, 0, 0, .6);
+                    #nav {
+                        padding-left: 0;
+                        li {
+                            a {
+                                height: 40px;
+                                line-height: 40px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    #yxf-advantage {
+        .yxf-advantage-titel {
+            h3 {
+                font-size: 22px;
+            }
+        }
+        .small {
+            .row {
+                #one {
+                    width: 100%;
+                    padding: 0 10%;
+                    margin-bottom: 10px;
+                    .left {
+                        transform: scale(0.8);
+                    }
+                    .right {
+                        margin-left: 12%;
+                    }
+                }
+            }
+        }
+    }
+    #costing {
+        padding: 6% 6%;
+        .container-fluid {
+            text-align: center;
+            .row {
+                margin-left: 0;
+                .yxf-costing-info {
+                    margin-left: -4%;
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+    }
+    #yxf-operation {
+        padding: 2% 6%;
+        h3 {
+            margin-top: 5%;
+            font-size: 22px;
+        }
+        p {
+            font-size: 16px;
+        }
+    }
+    #yxf-template {
+        padding: 6% 6%;
+        .container-fluid {
+            .row {
+                #yxf-template-right {
+                    padding-left: 0;
+                    h3 {
+                        text-align: center;
+                        font-size: 22px;
+                        font-weight: bold;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    #yxf-material {
+        padding: 10% 6%;
+        .container-fluid {
+            .row {
+                #yxf-material-info {
+                    margin-top: 1%;
+                    h3 {
+                        font-size: 22px;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    #yxf-equipment-monitoring {
+        padding: 6% 6%;
+        .container-fluid {
+            .row {
+                #yxf-equipment-monitoring-right {
+                    padding: 3% 0 0;
+                    h3 {
+                        font-size: 22px;
+                        text-align: center;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    #yxf-realization {
+        padding: 5% 6%;
+        .container-fluid {
+            .row {
+                #yxf-realization-info {
+                    text-align: center;
+                    margin-top: 5%;
+                    h3 {
+                        font-size: 22px;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    } // 大数据
+    #yxf-big-data {
+        padding: 5% 6%;
+        .container-fluid {
+            .row {
+                #yxf-big-data-right {
+                    margin-top: 5%;
+                    h3 {
+                        font-size: 22px;
+                    }
+                    p {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    #footer-small {
+        background-color: #231816;
+        color: #fff;
+        font-size: 16px;
+        padding: 4%;
+        .particulars {
+            a {
+                font-size: 14px;
+            }
+            .left {
+                .About-us {
+                    margin-bottom: 10px;
+                    .About-us-one {
+                        font-size: 16px;
+                    }
+                    .About-us-two {
+                        margin: 0 10px;
+                    }
+                }
+                .product-center {
+                    margin-bottom: 10px;
+                    .product-center-two {
+                        margin: 0 22px 0 10px;
+                    }
+                    .product-center-three {
+                        color: #f04d1c;
+                    }
+                }
+                .case {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .address {
+            .base {
+                font-size: 12px;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width:1200px) {
+    #yxf-advantage {
+        .small {
+            padding: 0 8%;
+            .row {
+                div {
+                    .right {
+                        margin-left: 20%;
+                    }
+                }
+            }
+        }
+    }
+    #costing {
+        .row {
+            .yxf-costing-info {
+                margin-top: 5%;
+                text-align: center;
+            }
+            .yxf-costing-map {
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    }
+    #yxf-operation {
+        .row {
+            .yxf-operation-left {
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    #yxf-template {
+        overflow: hidden;
+        .row {
+            .yxf-template-left {
+                text-align: center;
+                img {
+                    width: 80%;
+                }
+            }
+            .yxf-template-right {
+                margin-top: 5%;
+                margin-left: 22%;
+            }
+        }
+    }
+    #yxf-material {
+        .row {
+            .yxf-material-info {
+                text-align: center;
+                margin-top: 5%;
+            }
+            .yxf-material-map {
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    #yxf-equipment-monitoring {
+        .row {
+            .yxf-equipment-monitoring-left {
+                text-align: center;
+                img {
+                    width: 80%;
+                }
+            }
+            .yxf-equipment-monitoring-right {
+                padding-top: 5%;
+                padding-left: 20%;
+            }
+        }
+    }
+    #yxf-realization {
+        .row {
+            .yxf-realization-info {
+                margin-top: 8%;
+                padding-left: 24%;
+            }
+            .yxf-realization-map {
+                text-align: center;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    }
+    #yxf-big-data {
+        .row {
+            .yxf-big-data-left {
+                text-align: center;
+                img {
+                    width: 80%;
+                }
+            }
+            .yxf-big-data-right {
+                margin-top: 5%;
+                padding-left: 24%;
+            }
+        }
+    }
+}
+
+@media (max-width:330px) {
+    #yxf-advantage {
+        .yxf-advantage-titel {
+            h3 {
+                font-size: 22px;
+            }
+        }
+        .small {
+            .row {
+                #one {
+                    width: 100%;
+                    padding: 0 5%;
+                    margin-bottom: 10px;
+                    .left {
+                        transform: scale(0.8);
+                    }
+                    .right {
+                        margin-left: 8%;
+                    }
+                }
+            }
+        }
+    }
+}

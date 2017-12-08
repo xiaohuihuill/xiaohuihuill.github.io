@@ -1,0 +1,61 @@
+@-webkit-keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 200%, 0);
+            transform: translate3d(0, 200%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInUp {
+  from {
+    -webkit-transform: translate3d(0, 200%, 0);
+            transform: translate3d(0, 200%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+.slideInUp1 {
+  -webkit-animation: slideInUp .6s;
+          animation: slideInUp .6s;
+}
+
+.slideInUp2 {
+  -webkit-animation: slideInUp 1s;
+          animation: slideInUp 1s;
+}
+
+.slideInUp3 {
+  -webkit-animation: slideInUp 2s;
+          animation: slideInUp 2s;
+}
+
+.slideInUp4 {
+  -webkit-animation: slideInUp 3s;
+          animation: slideInUp 3s;
+}
+
+.slideInUp5 {
+  -webkit-animation: slideInUp 4s;
+          animation: slideInUp 4s;
+}
+
+.slideInUp6 {
+  -webkit-animation: slideInUp 5s;
+          animation: slideInUp 5s;
+}
+
+.slideInUp7 {
+  -webkit-animation: slideInUp 6s;
+          animation: slideInUp 6s;
+}
+
+.slideInUp8 {
+  -webkit-animation: slideInUp 7s;
+          animation: slideInUp 7s;
+}

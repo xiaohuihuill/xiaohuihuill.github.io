@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <!-- ie让页面 按照edge这个版本 来渲染 主要针对的是ie浏览器  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口属性 -->
+    <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no;">
+    <title>屏效宝</title>
+    <!-- Bootstrap -->
+    <link href="./js/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- 样式中 可能会覆盖bootstap的一些样式 所以后倒入 -->
+    <link rel="stylesheet" href="./css/baseIndex.css" />
+    <!-- 样式中 可能会覆盖bootstap的一些样式 所以后倒入 -->
+    <link rel="stylesheet" href="./css/pxb.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- 条件注释 小于 ie9 -->
+    <!--html5shiv html5 新语义标签-->
+    <!-- 如果想要下载到本地 可以去  github-->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--  为了方便管理 最外层套一个容器 -->
+    <div class="pxb-layout container-fluid">
+        <!--顶部背景-->
+        <div class="pxb-bg hidden-xs">
+            <img src="./images/pxb/banner.png" alt="">
+        </div>
+        <!--<div class="banner-consult hidden-xs hidden-sm">
+            <div class="quanquan"><i class="iF iF-quanquan"></i></div>
+            <div class="consult-rexian">
+                <div class="consult-rexian-tubiao display"><i class="iF iF-dianhua"></i></div>
+                <div class="consult-rexian-dianhua display">全国咨询电话</div>
+            </div>
+            <div class="consult-rexian-number">
+                0755-23575567
+            </div>
+            <div class="consult-rexian-QQ"><span><a target="-blank" style="color:#f04d1c" href="http://wpa.qq.com/msgrd?v=3&uin=3174887172&site=qq&menu=yes">在线QQ咨询</a></span></div>
+        </div>-->
+        <!--small顶部背景-->
+        <div class="pxb-bg-two visible-xs">
+            <img src="./images/pxb/smallbanner.jpg" alt="">
+        </div>
+        <!--头部导航-->
+        <div class="pxb-header" id="pxb-header">
+            <nav class="navbar navbar-default" id="pxb-navbar">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                            aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand clearfix" href="./pxb.html">
+                            <div class="fl">
+                                <i class="iF iF-pingxiaobao" id="pxb-fonts-one"></i>
+                            </div>
+                            <div class="fr">
+                                <i class="iF iF-pxb" id="pxb-fonts-two"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav" id="nav">
+                            <li>
+                                <a href="http://www.eselltech.com/cooperation.html">合作案例
+                                    <span class="sr-only">(current)</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">代理合作</a>
+                            </li>
+                            <li>
+                                <a href="javascript:;">套餐资费</a>
+                            </li>
+                            <li>
+                                <a href="./index.html">易售官网</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="pxb-info hidden-xs hidden-sm">
+                <h3 class="slideInUp2">屏效宝</h3>
+                <p class="slideInUp3">线下屏媒广告平台</p>
+                <p class="slideInUp4">易售首创线下屏媒广告投放系统，连接海量媒体资源，为广告主提供&nbsp;便捷快速的投放功能及精准的</p>
+                <p class="slideInUp5">广告效果数据。媒体资源覆盖全国，分布于多种渠道。多元化屏媒类型满足广告主不同推广需求</p>
+                <a href="javascript:;" id="pxb-info-a" class="slideInUp6">
+                    <span>我要投放</span>
+                </a>
+                <a href="javascript:;" id="pxb-info-a" class="slideInUp6">
+                    <span>我是屏主</span>
+                </a>
+            </div>
+        </div>
+        <!--多场景覆盖-->
+        <div class="pxb-multi-scenario" id="pxb-multi-scenario">
+            <!--title优势-->
+            <div class="ys-banxin">
+                <div class="pxb-multi-scenario-titel" id="pxb-multi-scenario-animation">
+                    <h3 id="pxb-multi-scenario-first-line">多场景覆盖</h3>
+                    <div class="line clearfix hidden-xs" id="pxb-multi-scenario-second-line">
+                        <div class="one fl"></div>
+                        <div class="two fl"></div>
+                    </div>
+                    <p class="hidden-xs">覆盖全国各地，累计接入超过<span class="color">50000</span>张屏，<span class="color">5000</span>个楼宇，<span class="color">20000</span>部电梯</p>
+                </div>
+                <!--大屏-->
+                <div class="container-fluid" id="pxb-multi-scenario-all-ele">
+                    <div class="row" id="pxb-multi-scenario-all">
+                        <div class="pxb-multi-scenario-one col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div></div>
+                            <h4>居家场景</h4>
+                            <p>
+                                门禁屏、快递柜屏、电梯屏</p>
+                        </div>
+                        <div class="pxb-multi-scenario-two col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div></div>
+                            <h4>工作场景</h4>
+                            <p>
+                                写字楼广告机</p>
+                        </div>
+                        <div class="pxb-multi-scenario-three col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div></div>
+                            <h4>出行场景</h4>
+                            <p>
+                                机场屏，地铁屏</p>
+                        </div>
+                        <div class="pxb-multi-scenario-four col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div></div>
+                            <h4>消费场景</h4>
+                            <p>
+                                便利店收银屏、商场户外屏</p>
+                            <p>
+                                商场广告机</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--我们的资源-->
+        <div class="pxb-main-resource" id="pxb-main-resource">
+            <div class="container-fluid">
+                <div class="ys-banxin">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div class="pxb-main-resource-info" id="pxb-main-resource-all">
+                                <h5>我们连接的资源</h5>
+                                <div class="line2 clearfix hidden-xs hidden-md hidden-sm">
+                                    <div class="left fl"></div>
+                                    <div class="right fl"></div>
+                                </div>
+                                <div class="clearfix quantity hidden-xs hidden-sm">
+                                    <div class="province fl"><span>20+省</span></div>
+                                    <div class="city fl"><span>100+城市</span></div>
+                                    <div class="besel fl"><span>50000+屏</span></div>
+                                </div>
+                                <p class="hidden-xs">为连接全国海量广告屏资源，砥砺前行</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                            <div class="pxb-main-resource-screen">
+                                <img class="img" src="./images/pxb/small2.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--精准投放-->
+        <div class="pxb-put-in" id="pxb-put-in">
+            <div class="container-fluid">
+                <div class="ys-banxin">
+                    <div class="row">
+                        <div class="pxb-put-in-left col-lg-6 col-md-12 hidden-xs hidden-sm hidden-md">
+                            <img class="img" src="./images/pxb/small3.png" alt="">
+                        </div>
+                        <div class="pxb-put-in-right col-lg-6 col-md-12" id="pxb-put-in-right">
+                            <h3 id="pxb-put-in-first-line">精准投放</h3>
+                            <p class="hidden-xs" id="pxb-put-in-six-line">自定已投放场景及地理位置，支持人群定向，轻松实现精准</p>
+                            <p class="hidden-xs" id="pxb-put-in-six-line">商圈投放</p>
+                        </div>
+                        <div class="pxb-put-in-left col-lg-6 col-md-12 hidden-lg">
+                            <img class="img" src="./images/pxb/small3.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--灵活化-->
+        <div class="pxb-flexible" id="pxb-flexible">
+            <!--title优势-->
+            <div class="ys-banxin">
+                <div class="pxb-flexible-titel" id="pxb-flexible-animation">
+                    <h3 id="pxb-flexible-first-line">灵活化</h3>
+                </div>
+                <!--大屏-->
+                <div class="container-fluid" id="pxb-flexible-all-ele">
+                    <div class="row" id="pxb-flexible-all">
+                        <div class="pxb-flexible-one col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div></div>
+                            <h4>屏幕可选</h4>
+                            <p>您可以自主选择</p>
+                            <p>特定屏幕进行投放</p>
+                        </div>
+                        <div class="pxb-flexible-two col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div></div>
+                            <h4>金额可选</h4>
+                            <p>起投金额极低，预算有限</p>
+                            <p>也可轻松投放</p>
+                        </div>
+                        <div class="pxb-flexible-three col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div></div>
+                            <h4>时间可选</h4>
+                            <p>可自由选择投放时间段</p>
+                        </div>
+                        <div class="pxb-flexible-four col-lg-3 col-md-6 col-sm-6 col-xs-12">
+                            <div></div>
+                            <h4>广告类型可选</h4>
+                            <p>支持竞价广告，合约广告，</p>
+                            <p>包断广告等多种形式</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--联网播控-->
+        <div class="pxb-networking" id="pxb-networking">
+            <div class="container-fluid">
+                <div class="ys-banxin">
+                    <div class="row">
+                        <div class="pxb-networking-info col-lg-6 col-md-12">
+                            <div id="pxb-networking-info">
+                                <h3 id="pxb-networking-first-line">联网播控</h3>
+                                <p class="hidden-xs">双重广告审核机制，确保内容播出安全性。连接全国海量媒体</p>
+                                <p class="hidden-xs">资源，实现广告跨地域跨场景投放</p>
+                            </div>
+                        </div>
+                        <div class="pxb-networking-map col-lg-6 col-md-12" id="pxb-networking-map">
+                            <div>
+                                <img class="img" src="./images/pxb/small5.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!--样式灵活-->
+        <div class="pxb-style" id="pxb-style">
+            <div class="container-fluid">
+                <div class="ys-banxin">
+                    <div class="row">
+                        <div class="pxb-style-left col-lg-6 col-md-12 hidden-xs hidden-sm hidden-md" id="pxb-style-left">
+                            <img class="img" src="./images/pxb/small6.png" alt="">
+                        </div>
+                        <div class="pxb-style-right col-lg-6 col-md-12" id="pxb-style-right">
+                            <h3 id="pxb-style-first-line">样式灵活</h3>
+                            <p class="color hidden-xs" id="pxb-style-second-line">支持视频、图片、文字广告内容，结合多元化投放场景，达到</p>
+                            <p class="hidden-xs" id="pxb-style-thrid-line">最佳投放效果</p>
+                        </div>
+                        <div class="pxb-style-left col-lg-6 col-md-12 hidden-lg" id="pxb-style-left">
+                            <img class="img" src="./images/pxb/small6.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--效果可视-->
+        <div class="pxb-result" id="pxb-result">
+            <div class="container-fluid">
+                <div class="ys-banxin">
+                    <div class="row">
+                        <div class="pxb-result-info col-lg-6 col-md-12" id="pxb-result-info">
+                            <h3 id="pxb-result-first-line">效果可视</h3>
+                            <p class="hidden-xs" id="pxb-result-second-line">提供实时准确的投放效果报表，广告主第一时间了解广告投放的</p>
+                            <p class="hidden-xs" id="pxb-result-thrid-line">每一个细节，从而缩短优化周期，节约投放预算</p>
+                        </div>
+                        <div class="pxb-result-map col-lg-6 col-md-12">
+                            <img class="img" src="./images/pxb/small7.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--部分知名合作品牌-->
+        <div class="pxb-safe-and-reliable" id="pxb-safe-and-reliable">
+            <div class="ys-banxin">
+                <div class="pxb-safe-and-reliable-titel" id="pxb-safe-and-reliable-titel">
+                    <h3 id="pxb-safe-and-reliable-first-line">部分知名合作品牌</h3>
+                    <div class="line clearfix hidden-xs" id="pxb-safe-and-reliable-second-line">
+                        <div class="one fl"></div>
+                        <div class="two fl"></div>
+                    </div>
+                </div>
+                <div class="pxb-safe-and-reliable-map hidden-xs ">
+                    <img src="./images/pxb/smalllogo.jpg" alt="">
+                </div>
+                <div class="pxb-safe-and-reliable-map hidden-sm hidden-md hidden-lg">
+                    <img src="./images/pxb/smalllogo1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+        <!--底部大屏-->
+        <div class="footer visible-lg visible-md visible-sm" id="footer">
+            <div class="particulars clearfix">
+                <div class="left fl" style="width:70%;">
+                    <div class="clearfix">
+                        <div class="About-us fl" style="width:20%;">
+                            <div class="About-us-one">关于我们</div>
+                            <div class="About-us-two">
+                                <a href="http://www.eselltech.com/introduce.html">-公司简介</a>
+                            </div>
+                            <div class="About-us-three">
+                                <a href="http://www.eselltech.com/contact.html">-联系我们</a>
+                            </div>
+                        </div>
+                        <div class="product-center fl" style="width:20%;">
+                            <div class="product-center-one">产品中心</div>
+                            <div class="product-center-two">
+                                <a href="./pxb.html">-屏效宝</a>
+                            </div>
+                            <div class="product-center-three">
+                                <a href="./yxf.html">-易信发</a>
+                            </div>
+                        </div>
+                        <div class="case fl" style="width:20%;">合作案例</div>
+                    </div>
+                </div>
+                <div class="right fr" style="width:30%;">
+                    <div class="clearfix">
+                        <div class="hot-line fl"></div>
+                        <div class="fr">咨询电话&nbsp;:&nbsp;0755-23575567</div>
+                    </div>
+                </div>
+            </div>
+            <div class="address">
+                <div class="base">Copyright
+                    <span>&nbsp;©&nbsp;</span>&nbsp;2016&nbsp;易售科技&nbsp;All&nbsp;Rights&nbsp;Reserved.&nbsp;粤&nbsp;ICP&nbsp;备&nbsp;16027434&nbsp;号&nbsp;-2&nbsp;地址&nbsp;:&nbsp;广东省宝安区航城大道航城创新创业园&nbsp;A1&nbsp;栋&nbsp;3A05&nbsp;室</div>
+            </div>
+        </div>
+        <!--底部小屏-->
+        <div class="footer-small visible-xs" id="footer-small">
+            <div class="particulars">
+                <div class="left">
+                    <div class="clearfix">
+                        <div class="About-us clearfix">
+                            <div class="About-us-one fl">关于我们</div>
+                            <div class="About-us-two fl">
+                                <a href="http://www.eselltech.com/introduce.html">-公司简介</a>
+                            </div>
+                            <div class="About-us-three fl">
+                                <a href="http://www.eselltech.com/contact.html">-联系我们</a>
+                            </div>
+                        </div>
+                        <div class="product-center clearfix">
+                            <div class="product-center-one fl">产品中心</div>
+                            <div class="product-center-two fl">
+                                <a class="color" href="http://www.pingxiaobao.com/">-屏效宝</a>
+                            </div>
+                            <div class="product-center-three fl color">
+                                <a href="http://www.yixinfa.cn/">-易信发</a>
+                            </div>
+                        </div>
+                        <div class="case fl">合作案例</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>咨询电话&nbsp;:&nbsp;0755-23575567</p>
+                </div>
+            </div>
+            <div class="address">
+                <div class="base">
+                    <p>Copyright&nbsp;2016&nbsp;易售科技</p>
+                    <p>All&nbsp;Rights&nbsp;Reserved.&nbsp;粤&nbsp;ICP&nbsp;备&nbsp;16027434&nbsp;号&nbsp;-2&nbsp;</p>
+                    <p>地址&nbsp;:&nbsp;广东省宝安区航城大道航城创新创业园&nbsp;A1&nbsp;栋&nbsp;3A05&nbsp;室</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/jquery/jquery-2.2.0.min.js"></script>
+<script src="./js/bootstrap/bootstrap.min.js"></script>
+<script>
+    /**
+     * 判断是否是pc设备
+     */
+    function page() {
+        if ((navigator.userAgent.match(
+                /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+            ))) {
+            return "yd"
+        } else {
+            return "pc"
+        }
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // 封装动画
+        function animation(id, changeId, AnimationName) {
+            var height = document.getElementById(id).offsetTop + 120;
+            if (height >= $(window).scrollTop() && height < ($(window).scrollTop() + $(window).height())) {
+                if ($("#" + changeId).children().length <= 2) $("#" + changeId).children().addClass(
+                    AnimationName + 3);
+                $("#" + changeId).children().each(function (i, v) {
+                    $(v).addClass(AnimationName + (i + 1));
+                });
+            }
+        }
+        if (page() === "pc") {
+            // 进入页面执行一次的动画
+            // 暂时没有做截流，没有做到可视区后运行该区域函数，后期优化
+            $(window).scroll(function () {
+                // 多场景
+                animation("pxb-multi-scenario", "pxb-multi-scenario-animation", "slideInUp");
+                animation("pxb-multi-scenario", "pxb-multi-scenario-all", "slideInUp");
+                // 资源
+                animation("pxb-main-resource", "pxb-main-resource-all", "slideInUp");
+                // 精准投放
+                animation("pxb-put-in", "pxb-put-in-right", "slideInUp");
+                // 灵活化
+                animation("pxb-flexible", "pxb-flexible-animation", "slideInUp");
+                animation("pxb-flexible", "pxb-flexible-all", "slideInUp");
+                // 联网播控
+
+                animation("pxb-networking", "pxb-networking-info", "slideInUp");
+                // 样式灵活
+                animation("pxb-style", "pxb-style-right", "slideInUp");
+                // 效果可视
+                animation("pxb-result", "pxb-result-info", "slideInUp");
+                // 部分知名合作品牌
+                animation("pxb-safe-and-reliable", "pxb-safe-and-reliable-titel", "slideInUp");
+            })
+            // hover盒子往上
+            function box_upslope(className) {
+                $(className).hover(function () {
+                    $(this).stop().animate({
+                        "marginTop": "-20px"
+                    }, 500);
+                }, function () {
+                    $(this).stop().animate({
+                        "marginTop": 0
+                    }, 500);
+                });
+            }
+            box_upslope("#pxb-multi-scenario-all .col-lg-3");
+            box_upslope("#pxb-flexible-all .col-lg-3");
+        }
+
+
+    });
+</script>

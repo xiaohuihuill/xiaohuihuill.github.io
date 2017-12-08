@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <!-- ie让页面 按照edge这个版本 来渲染 主要针对的是ie浏览器  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 视口属性 -->
+    <meta id="viewport" name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1; user-scalable=no;">
+    <title>易售科技</title>
+    <!-- Bootstrap -->
+    <link href="./js/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- Animate -->
+    <link rel="stylesheet" href="./css/animate.css">
+    <!-- 样式中 可能会覆盖bootstap的一些样式 所以后倒入 -->
+    <link rel="stylesheet" href="./css/baseIndex.css" />
+    <!-- 样式中 可能会覆盖bootstap的一些样式 所以后倒入 -->
+    <link rel="stylesheet" href="./css/index.css" />
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- 条件注释 小于 ie9 -->
+    <!--html5shiv html5 新语义标签-->
+    <!-- 如果想要下载到本地 可以去  github-->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!--  为了方便管理 最外层套一个容器 -->
+    <div class="ys-layout container-fluid">
+        <div class="banner-consult visible-lg">
+            <div class="quanquan"><i class="iF iF-quanquan"></i></div>
+            <div class="consult-rexian">
+                <div class="consult-rexian-tubiao display"><i class="iF iF-dianhua"></i></div>
+                <div class="consult-rexian-dianhua display">全国咨询电话</div>
+            </div>
+            <div class="consult-rexian-number">
+                0755-23575567
+            </div>
+            <div class="consult-rexian-QQ"><span><a target="-blank" style="color:#f04d1c" href="http://wpa.qq.com/msgrd?v=3&uin=3174887172&site=qq&menu=yes">在线QQ咨询</a></span></div>
+        </div>
+        <!--头部-->
+        <div class="ys-header hidden-xs">
+            <div class="ys-banxin clearfix">
+                <div class="header-logo fl">
+                    <img src="./images/logo.png" alt="">
+                </div>
+                <div class="header-phone fr clearfix">
+                    <div class="header-phone-icon fl">
+                        <i class="iF iF-phone"></i>
+                    </div>
+                    <div class="header-phone-number fr">
+                        <span>0755-23575567</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--导航-->
+        <div class="ys-nav" id="ys-nav">
+            <nav id='ys-nav' class=" navbar navbar-default">
+                <div class="ys-banxin">
+                    <div class="container-fluid">
+                        <!-- Brand and toggle get grouped for better mobile display -->
+                        <div class="navbar-header" id="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" id="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                                aria-expanded="false">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                            <a href="javascript:;" class="visible-xs small-logo"><img src="./images/logo.png" alt=""></a>
+                        </div>
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                            <ul class="nav navbar-nav">
+                                <li><a href="http://www.eselltech.com/index.html">首页</a></li>
+                                <li class="hidden-xs" id="nav-hover"><a href="http://www.eselltech.com/product.html">产品中心</a></li>
+                                <li class="visible-xs"><a href="./pxb.html">屏效宝</a></li>
+                                <li class="visible-xs"><a href="./yxf.html">易信发</a></li>
+                                <li><a href="http://www.eselltech.com/cooperation.html">合作案例</a></li>
+                                <li><a href="http://www.eselltech.com/introduce.html">公司介绍</a></li>
+                                <li><a href="http://www.eselltech.com/contact.html">联系我们</a></li>
+                            </ul>
+                            <!--导航下面的盒子-->
+                            <div class="nav-selected hidden-xs" id="nav-selected">
+                                <div class="triangle-border-up">
+                                    <span></span>
+                                </div>
+                                <div class="nav-reveal clearfix">
+                                    <a href="./pxb.html" class="fl nav-reveal-pingxiaobao">
+                                        <div class="nav-reveal-pingxiaobao-info">
+                                            <div class="nav-reveal-pingxiaobaotu"><i class="iF iF-pingxiaobao"></i></div>
+                                            <div class="nav-reveal-pingxiaobaozi"><i class="iF iF-pxb"></i></div>
+                                            <p>线下屏媒广告平台</p>
+                                        </div>
+                                    </a>
+                                    <div class="nav-reveal-line fl"></div>
+                                    <a href="./yxf.html" class="fr nav-reveal-yixinfa">
+                                        <div class="nav-reveal-yixinfa-info">
+                                            <div class="nav-reveal-yixinfatu"><i class="iF iF-yixinfa"></i></div>
+                                            <div class="nav-reveal-yixinfazi"><i class="iF iF-yxf"></i></div>
+                                            <p>云信息发布系统</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </div>
+                </div>
+                <!-- /.container-fluid -->
+            </nav>
+        </div>
+        <!--广告栏-->
+        <div class="ys-banner  hidden-xs" id="ys-banner">
+            <div class="banner-bg">
+                <img src="./images/1.png" alt="">
+            </div>
+            <div class="banner-shade"></div>
+            <div class="banner-center visible-lg">
+                <div class="esell slideInUp2"><span>有屏就有易售</span></div>
+                <div class="new-age slideInUp3"><span>全&nbsp;面&nbsp;开&nbsp;启&nbsp;物&nbsp;联&nbsp;网&nbsp;广&nbsp;告&nbsp;新&nbsp;时&nbsp;代</span></div>
+            </div>
+
+        </div>
+        <div class="ys-banner-two visible-xs" id="ys-banner-two">
+            <div class="banner-bg">
+                <img src="./images/small11.png" alt="">
+            </div>
+        </div>
+        <!--主体屏效宝-->
+        <div class="ys-main-pxb" id="ys-main-pxb">
+            <div class="container-fluid">
+                <div class="ys-banxin">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="ys-main-pxb-info" id="ys-main-pxb-info">
+                                <h5>屏效宝</h5>
+                                <p>屏媒广告投放平台</p>
+                                <p class="hidden-xs"><i class="iF iF-dot"></i>连接海量线下优质广告屏</p>
+                                <p class="hidden-xs"><i class="iF iF-dot"></i>精准投放,不浪费每一分预算</p>
+                                <div class="button">
+                                    <a href="http://www.pingxiaobao.com/"><button class="btn">我要投放</button></a>
+                                    <a href="http://www.pingxiaobao.com/"><button class="btn">我是媒体</button></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ys-main-pxb-screen">
+                                <a href="http://www.pingxiaobao.com/"><img class="img" src="./images/pingxiaobao.png" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--主体易信发-->
+        <div class="ys-main-yxf" id="ys-main-yxf">
+            <div class="container-fluid">
+                <div class="ys-banxin">
+                    <div class="row clearfix">
+                        <div class="ys-main-yxf-screen fl hidden-xs">
+                            <a href="javascript:;"><img class="img" src="./images/yixinfa.png" alt=""></a>
+                        </div>
+                        <div class="ys-main-yxf-info fr" id="ys-main-yxf-info">
+                            <h5>易信发</h5>
+                            <p>先进的云信息发布系统</p>
+                            <p class="hidden-xs"><i class="iF iF-dot"></i>远程批量管理设备，轻松进行内容编排</p>
+                            <p class="hidden-xs"><i class="iF iF-dot"></i>屏幕布局自定义设置，轻松分屏</p>
+                            <p class="hidden-xs"><i class="iF iF-dot"></i>设备闲时轻松变现，让您的广告机收益最大化</p>
+                            <div class="button hidden-sm hidden-md">
+                                <a href="./yxf.html"><button class="btn">了解产品</button></a>
+                            </div>
+                        </div>
+                        <div class="ys-main-yxf-screen fl visible-xs">
+                            <a href="./yxf.html"><img class="img" src="./images/yixinfa.png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--我们的优势-->
+        <div class="ys-advantage" id="ys-advantage">
+            <div class="me" id="ys-advantage-me">
+                <h5>我们的优势</h5>
+                <div class="line clearfix hidden-xs">
+                    <div class="left fl"></div>
+                    <div class="right fl"></div>
+                </div>
+            </div>
+            <div class="ys-banxin">
+                <div class="benefit container-fluid">
+                    <div class="row" id="ys-advantage-all">
+                        <div class="administration col-lg-3 col-md-6">
+                            <div class=""><img src="./images/magnanimityMedia.png" alt=""></div>
+                            <p>海量媒体轻松管理</p>
+                        </div>
+                        <div class="operation col-lg-3 col-md-6">
+                            <div><img src="./images/systemInterface.png" alt=""></div>
+                            <p>系统界面清晰操作简单</p>
+                        </div>
+                        <div class="effect col-lg-3 col-md-6">
+                            <div><img src="./images/data.png" alt=""></div>
+                            <p>数据多重追溯效果可控</p>
+                        </div>
+                        <div class="cost col-lg-3 col-md-6">
+                            <div><img src="./images/media.png" alt=""></div>
+                            <p>媒体价值最大化</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--我们的资源-->
+        <div class="ys-main-resource" id="ys-main-resource">
+            <div class="container-fluid">
+                <div class="ys-banxin">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="ys-main-resource-info" id="ys-main-resource-info">
+                                <h5>我们连接的资源</h5>
+                                <div class="line2 clearfix hidden-xs">
+                                    <div class="left fl"></div>
+                                    <div class="right fl"></div>
+                                </div>
+                                <div class="clearfix quantity hidden-xs">
+                                    <div class="province fl"><span>20+省</span></div>
+                                    <div class="city fl"><span>100+城市</span></div>
+                                    <div class="besel fl"><span>50000+屏</span></div>
+                                </div>
+                                <p class="hidden-xs">精准投放,不浪费每一分预算</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="ys-main-resource-screen">
+                                <img class="img" src="./images/map.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--服务-->
+        <div class="ys-main-serve hidden-xs" id="ys-main-serve">
+            <div class="ys-main-serve-bg">
+                <img src="./images/2.png" alt="">
+            </div>
+            <div class="ys-main-serve-center hidden-xs" id="ys-main-serve-center">
+                <div class="esell"><span>为全国广大客户</span></div>
+                <div class="new-age"><span>提&nbsp;供&nbsp;3&nbsp;6&nbsp;5&nbsp;X&nbsp;2&nbsp;4&nbsp;小&nbsp;时&nbsp;优&nbsp;质&nbsp;服&nbsp;务</span></div>
+            </div>
+        </div>
+        <div class="ys-main-serve-two visible-xs">
+            <img src="./images/small2.png" alt="">
+        </div>
+        <!--合作案例-->
+        <div class="ys-main-case" id="ys-main-case">
+            <div class="container-fluid">
+                <div class="ys-banxin">
+                    <div class="row clearfix">
+                        <div class="ys-main-case-screen fl hidden-xs">
+                            <div class="shade"></div>
+                            <img class="img" src="./images/screen.png" alt="">
+                        </div>
+                        <div class="ys-main-case-info fr" id="ys-main-case-info">
+                            <h5>合作案例</h5>
+                            <div class="line3 clearfix hidden-xs">
+                                <div class="left fl"></div>
+                                <div class="right fl"></div>
+                            </div>
+                            <p>齐齐哈尔公交车屏幕</p>
+                            <p>超过700台公交车屏使用易信发</p>
+                            <p class="hidden-xs">实现设备批量管理</p>
+                            <p class="hidden-xs">远程控制各条路线设备开关机，音量等调节</p>
+                            <p class="hidden-xs">自由编排节目和广告，商业变现收入源源不断</p>
+                            <div class="button hidden-xs">
+                                <a href="http://www.pingxiaobao.com/"><button class="btn">更多案例</button></a>
+                            </div>
+                        </div>
+                        <div class="ys-main-case-screen fl visible-xs">
+                            <div class="shade"></div>
+                            <img src="./images/screen.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--底部大屏-->
+        <div class="footer visible-lg visible-md visible-sm" id="footer">
+            <div class="particulars clearfix">
+                <div class="left fl" style="width:70%;">
+                    <div class="clearfix">
+                        <div class="About-us fl" style="width:20%;">
+                            <div class="About-us-one">关于我们</div>
+                            <div class="About-us-two">
+                                <a href="http://www.eselltech.com/introduce.html">-公司简介</a>
+                            </div>
+                            <div class="About-us-three">
+                                <a href="http://www.eselltech.com/contact.html">-联系我们</a>
+                            </div>
+                        </div>
+                        <div class="product-center fl" style="width:20%;">
+                            <div class="product-center-one">产品中心</div>
+                            <div class="product-center-two">
+                                <a href="http://www.pingxiaobao.com/">-屏效宝</a>
+                            </div>
+                            <div class="product-center-three color">
+                                <a href="http://www.yixinfa.cn/">-易信发</a>
+                            </div>
+                        </div>
+                        <div class="case fl" style="width:20%;">合作案例</div>
+                    </div>
+                </div>
+                <div class="right fr" style="width:30%;">
+                    <div class="clearfix">
+                        <div class="hot-line fl"></div>
+                        <div class="fr">咨询电话&nbsp;:&nbsp;0755-23575567</div>
+                    </div>
+                </div>
+            </div>
+            <div class="address">
+                <div class="base">Copyright
+                    <span>&nbsp;©&nbsp;</span>&nbsp;2016&nbsp;易售科技&nbsp;All&nbsp;Rights&nbsp;Reserved.&nbsp;粤&nbsp;ICP&nbsp;备&nbsp;16027434&nbsp;号&nbsp;-2&nbsp;地址&nbsp;:&nbsp;广东省宝安区航城大道航城创新创业园&nbsp;A1&nbsp;栋&nbsp;3A05&nbsp;室</div>
+            </div>
+        </div>
+        <!--底部小屏-->
+        <div class="footer-small visible-xs" id="footer-small">
+            <div class="particulars">
+                <div class="left">
+                    <div class="clearfix">
+                        <div class="About-us clearfix">
+                            <div class="About-us-one fl">关于我们</div>
+                            <div class="About-us-two fl">
+                                <a href="http://www.eselltech.com/introduce.html">-公司简介</a>
+                            </div>
+                            <div class="About-us-three fl">
+                                <a href="http://www.eselltech.com/contact.html">-联系我们</a>
+                            </div>
+                        </div>
+                        <div class="product-center clearfix">
+                            <div class="product-center-one fl">产品中心</div>
+                            <div class="product-center-two fl">
+                                <a href="http://www.pingxiaobao.com/">-屏效宝</a>
+                            </div>
+                            <div class="product-center-three fl color">
+                                <a href="http://www.yixinfa.cn/">-易信发</a>
+                            </div>
+                        </div>
+                        <div class="case fl">合作案例</div>
+                    </div>
+                </div>
+                <div class="right">
+                    <p>咨询电话&nbsp;:&nbsp;0755-23575567</p>
+                </div>
+            </div>
+            <div class="address">
+                <div class="base">
+                    <p>Copyright&nbsp;2016&nbsp;易售科技</p>
+                    <p>All&nbsp;Rights&nbsp;Reserved.&nbsp;粤&nbsp;ICP&nbsp;备&nbsp;16027434&nbsp;号&nbsp;-2&nbsp;</p>
+                    <p>地址&nbsp;:&nbsp;广东省宝安区航城大道航城创新创业园&nbsp;A1&nbsp;栋&nbsp;3A05&nbsp;室</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/jquery/jquery-2.2.0.min.js"></script>
+<script src="./js/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        // 封装动画
+        function animation(id, changeId, AnimationName) {
+            var height = document.getElementById(id).offsetTop + 120;
+            if (height >= $(window).scrollTop() && height < ($(window).scrollTop() + $(window).height())) {
+                if ($("#" + changeId).children().length <= 2) $("#" + changeId).children().addClass(
+                    AnimationName + 3);
+                $("#" + changeId).children().each(function (i, v) {
+                    $(v).addClass(AnimationName + (i + 1));
+                });
+            }
+        }
+        /**
+         * 判断是否是pc设备
+         */
+        function page() {
+            if ((navigator.userAgent.match(
+                    /(phone|pad|pod|iPhone|iPod|ios|iPad|Android|Mobile|BlackBerry|IEMobile|MQQBrowser|JUC|Fennec|wOSBrowser|BrowserNG|WebOS|Symbian|Windows Phone)/i
+                ))) {
+                return "yd"
+            } else {
+                return "pc"
+            }
+        }
+        // 进入页面执行一次的动画
+        // 暂时没有做截流，到达可视区后运行该区域函数，后期优化
+        if (page() === "pc") {
+            $(window).scroll(function () {
+                // 屏效宝动画
+                animation("ys-main-pxb", "ys-main-pxb-info", "slideInUp");
+                // 易信发动画
+                animation("ys-main-yxf", "ys-main-yxf-info", "slideInUp");
+                // 优势
+                animation("ys-advantage", "ys-advantage-all", "slideInUp");
+                 animation("ys-advantage", "ys-advantage-me", "slideInUp");
+                //  资源
+                animation("ys-main-resource", "ys-main-resource-info", "slideInUp");
+                // 服务
+                animation("ys-main-serve", "ys-main-serve-center", "slideInUp");
+                // 案例
+                animation("ys-main-case", "ys-main-case-info", "slideInUp");
+            });
+            $("#nav-hover,#nav-selected").hover(function () {
+                $("#nav-selected").stop().animate({
+                    opacity: 1
+                }, 500).css({
+                    "display": "block"
+                })
+            }, function () {
+                $("#nav-selected").stop().animate({
+                    opacity: 0
+                }, 500).css({
+                    "display": "none"
+                })
+            });
+        }
+
+        // 在pc执行的动画
+        if ($(window).width() > 1200) {
+            function box_upslope(className) {
+                $(className).hover(function () {
+                    console.log($(this));
+                    $(this).stop().animate({
+                        "marginTop": -20
+                    }, 500);
+                }, function () {
+                    $(this).stop().animate({
+                        "marginTop": 0
+                    }, 500);
+                });
+            }
+            box_upslope("#ys-advantage-all .col-lg-3");
+        }
+
+    });
+</script>

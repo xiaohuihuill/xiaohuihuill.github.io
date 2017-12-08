@@ -1,0 +1,1058 @@
+    .pxb-layout {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        height: 100%;
+
+    } // 背景图
+    .banner-consult {
+        position: fixed;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        width: 170px;
+        height: 200px;
+        color: #fff;
+        text-align: center;
+        background-color: #f04d1c;
+        opacity: .9;
+        font-size: 18px;
+        .quanquan {
+            height: 85px;
+            line-height: 85px;
+            i {
+                font-size: 90px;
+            }
+        }
+        .consult-rexian {
+            height: 45px;
+            line-height: 45px;
+            box-sizing: border-box;
+            .consult-rexian-tubiao {
+                height: 45px;
+                i {
+                    font-size: 35px;
+                }
+            }
+            .consult-rexian-dianhua {
+                font-size: 16px;
+                margin-right: 8px;
+                height: 45px;
+                vertical-align: super;
+            }
+        }
+        .consult-rexian-QQ {
+            margin-top: 5px;
+            color: #f04d1c;
+            span {
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+                width: 80%;
+                background-color: #fff;
+            }
+        }
+    }
+
+    .pxb-bg {
+        position: relative;
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    }
+
+    .pxb-bg-two {
+        overflow: hidden;
+        img {
+            width: 100%;
+        }
+    } // 导航
+    .pxb-header {
+        .pxb-info {
+            position: absolute;
+            top: 30%;
+            left: 50%;
+            width: 867px;
+            margin-left: -433.5px;
+            color: #fff;
+            text-align: center;
+            h3 {
+                font-size: 40px;
+                margin-bottom: 18px;
+            }
+            p {
+                font-size: 20px;
+            }
+            a {
+                margin-top: 20px;
+                display: inline-block;
+                background: rgba(255, 255, 255, .8);
+                border-radius: 4px;
+                width: 150px;
+                height: 40px;
+                line-height: 40px;
+                margin-left: 1%;
+                color: #000;
+            }
+            a:hover {
+                border: 1px solid #fff;
+                background: transparent;
+                color: #fff;
+                transition: all 1s;
+                line-height: 38px;
+            }
+        }
+        #pxb-navbar {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            right: 0;
+            z-index: 11;
+            border: none;
+            background: rgba(0, 0, 0, .4);
+            margin-bottom: 0;
+            a {
+                height: 80px;
+                line-height: 80px;
+                padding-top: 0;
+                padding-bottom: 0; // 去掉背景色
+                background-color: transparent;
+                text-align: center;
+                color: #fff;
+                font-size: 18px;
+            }
+            a:hover {
+                border-bottom: 2px solid red;
+            } // 去掉第一个a标签的hover 底部边框
+            a.navbar-brand:hover {
+                border-bottom: none;
+            } // 设置第一个a标签内部字体的大小 已经颜色
+            a.navbar-brand {
+                .fl i {
+                    font-size: 40px;
+                    margin-right: 12px;
+                }
+                .fr i {
+                    font-size: 26px;
+                }
+            } // 设置汉堡菜单 上下居中
+            .navbar-toggle {
+                margin-top: 24px;
+            }
+            .container-fluid {
+                padding-left: 15%;
+            }
+        }
+        .navbar-default .navbar-toggle {
+            border-color: #fff;
+            .icon-bar {
+                background-color: #fff;
+            }
+        }
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: transparent;
+        }
+        #nav {
+            padding-left: 100px;
+        }
+    } // 多场景覆盖
+    .pxb-multi-scenario {
+        overflow: hidden;
+        background-color: #f8f8f8;
+        padding: 4% 0;
+        .pxb-multi-scenario-titel {
+            position: relative;
+            text-align: center;
+            h3 {
+                font-size: 30px;
+                font-weight: bold;
+                margin-bottom: 4%;
+            }
+            .line {
+                position: absolute;
+                top: 52px;
+                left: 50%;
+                margin-left: -35px;
+                .one {
+                    width: 35px;
+                    height: 5px;
+                    background-color: #000
+                }
+                .two {
+                    width: 35px;
+                    height: 5px;
+                    background-color: #999;
+                }
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        .container-fluid {
+            margin-top: 2%;
+            .row {
+                margin-top: 20px; // 第一个
+                h4 {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000;
+                }
+                p {
+                    text-align: center;
+                    color: #787878;
+                }
+                .pxb-multi-scenario-one {
+                    div {
+                        margin: 0 auto;
+                        height: 200px;
+                        width: 200px;
+                        background: url("../images/pxb/1.png") no-repeat 0 0;
+                    }
+                } // 第二个
+                .pxb-multi-scenario-two {
+                    div {
+                        margin: 0 auto;
+                        height: 200px;
+                        width: 200px;
+                        background: url("../images/pxb/1.png") no-repeat -325px 0;
+                    }
+                } // 第三个
+                .pxb-multi-scenario-three {
+                    div {
+                        margin: 0 auto;
+                        height: 200px;
+                        width: 200px;
+                        background: url("../images/pxb/1.png") no-repeat -651px 0;
+                    }
+                } // 第四个
+                .pxb-multi-scenario-four {
+                    div {
+                        margin: 0 auto;
+                        height: 200px;
+                        width: 200px;
+                        background: url("../images/pxb/1.png") no-repeat -977px 0;
+                    }
+                }
+            }
+        }
+    } // 我们的资源
+    .pxb-main-resource {
+        overflow: hidden;
+        padding: 3% 0;
+        .pxb-main-resource-info {
+            padding-top: 26%;
+            h5 {
+                font-size: 30px;
+                color: #231815;
+                font-weight: bold;
+            }
+            .line2 {
+                margin-top: 5px;
+                margin-bottom: 35px;
+                width: 100%;
+                height: 6px;
+                padding-left: 10%;
+                box-sizing: border-box;
+                .left {
+                    width: 8%;
+                    height: 6px;
+                    background-color: #231816;
+                }
+                .right {
+                    width: 8%;
+                    height: 6px;
+                    background-color: #ccc;
+                }
+            }
+            .quantity {
+                color: #000;
+                .province {
+                    text-align: center;
+                    width: 98px;
+                    margin-right: 10px;
+                }
+                .city {
+                    text-align: center;
+                    width: 132px;
+                    margin-right: 10px;
+                }
+                .besel {
+                    text-align: center;
+                    width: 132px;
+                }
+                div {
+                    height: 42px;
+                    line-height: 42px;
+                    border: 1px solid #000;
+                    font-size: 20px;
+                }
+            }
+            p {
+                margin-top: 20px;
+                font-size: 18px;
+                color: #787878;
+            }
+        }
+        .pxb-main-resource-screen {
+            text-align: right;
+        }
+    } // 精准投放
+    .pxb-put-in {
+        overflow: hidden;
+        background-color: #f8f8f8;
+        padding: 9% 0;
+        .pxb-put-in-left {
+            overflow: hidden;
+            img {
+                width: 100%;
+            }
+        }
+        .pxb-put-in-right {
+            margin-top: 10%;
+            padding-left: 10%;
+            h3 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 18px;
+                color: #787878;
+            }
+        }
+    } // 灵活化
+    .pxb-flexible {
+        overflow: hidden;
+        padding: 4% 0;
+        .pxb-flexible-titel {
+            position: relative;
+            text-align: center;
+            h3 {
+                font-size: 30px;
+                font-weight: bold;
+                margin: 4% 0;
+            }
+            .line {
+                position: absolute;
+                top: 52px;
+                left: 50%;
+                margin-left: -35px;
+                .one {
+                    width: 35px;
+                    height: 5px;
+                    background-color: #000
+                }
+                .two {
+                    width: 35px;
+                    height: 5px;
+                    background-color: #999;
+                }
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+        .container-fluid {
+            margin-top: 3%;
+            .row {
+                margin-top: 20px; // 第一个
+                h4 {
+                    text-align: center;
+                    font-size: 18px;
+                    color: #000;
+                }
+                p {
+                    text-align: center;
+                    color: #787878;
+                }
+                .pxb-flexible-one {
+                    div {
+                        margin: 0 auto;
+                        height: 200px;
+                        width: 200px;
+                        background: url("../images/pxb/4.png") no-repeat 0 0;
+                    }
+                } // 第二个
+                .pxb-flexible-two {
+                    div {
+                        margin: 0 auto;
+                        height: 200px;
+                        width: 200px;
+                        background: url("../images/pxb/4.png") no-repeat -329px 0;
+                    }
+                } // 第三个
+                .pxb-flexible-three {
+                    div {
+                        margin: 0 auto;
+                        height: 200px;
+                        width: 200px;
+                        background: url("../images/pxb/4.png") no-repeat -659px 0;
+                    }
+                } // 第四个
+                .pxb-flexible-four {
+                    div {
+                        margin: 0 auto;
+                        height: 200px;
+                        width: 200px;
+                        background: url("../images/pxb/4.png") no-repeat -985px 0;
+                    }
+                }
+            }
+        }
+    } // 联网播控
+    .pxb-networking {
+        padding: 4% 0;
+        overflow: hidden;
+        background-color: #f8f8f8;
+        .pxb-networking-info {
+            margin-top: 16%;
+            h3 {
+                font-size: 30px;
+                font-weight: bold;
+            }
+            h5 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 18px;
+                color: #787878;
+            }
+        }
+        .pxb-networking-map {
+            text-align: center;
+            overflow: hidden;
+            img {
+                width: 80%;
+            }
+        }
+    } // 样式灵活
+    .pxb-style {
+        padding: 5% 0;
+        overflow: hidden;
+        .pxb-style-left {
+            img {
+                width: 100%;
+            }
+        }
+        .pxb-style-right {
+            padding-left: 6%;
+            padding-top: 15%;
+            h3 {
+                margin-top: 0;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 18px;
+                color: #787878;
+            }
+        }
+    } //效果可视
+    .pxb-result {
+        background-color: #f8f8f8;
+        padding: 4% 0;
+        .pxb-result-info {
+            margin-top: 16%;
+            h3 {
+                margin-top: 0;
+                font-size: 30px;
+                font-weight: bold;
+            }
+            p {
+                font-size: 18px;
+                color: #787878;
+            }
+        }
+        .pxb-result-map {
+            text-align: center;
+            overflow: hidden;
+            img {
+                width: 80%;
+            }
+        }
+    } // 部分知名合作品牌
+    .pxb-safe-and-reliable {
+        overflow: hidden;
+        padding: 8% 0;
+        .pxb-safe-and-reliable-titel {
+            position: relative;
+            text-align: center;
+            h3 {
+                font-size: 30px;
+                font-weight: bold;
+                margin: 4% 0;
+            }
+            .line {
+                position: absolute;
+                top: 52px;
+                left: 50%;
+                margin-left: -42px;
+                .one {
+                    width: 40px;
+                    height: 5px;
+                    background-color: #000
+                }
+                .two {
+                    width: 40px;
+                    height: 5px;
+                    background-color: #999;
+                }
+            }
+        }
+        .pxb-safe-and-reliable-map {
+            img {
+                width: 100%;
+            }
+        }
+    } // 底部
+    /*footer-------------begin*/
+
+    .footer {
+        padding: 0 5%;
+        height: 300px;
+        width: 100%;
+        background-color: #231816;
+        box-sizing: border-box;
+        padding: 0 12.5%;
+        color: #fff;
+    }
+
+    .footer .particulars {
+        font-size: 18px;
+        padding-top: 50px;
+        height: 250px;
+        box-sizing: border-box;
+    }
+
+    .footer .address {
+        height: 50px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .About-us .About-us-one {
+        font-size: 18px;
+    }
+
+    .About-us .About-us-two {
+        margin-top: 30px;
+    }
+
+    .product-center .product-center-two {
+        margin-top: 30px;
+    }
+
+    .product-center .product-center-two a {
+        color: #f04d1c;
+    }
+
+    .particulars a {
+        color: #fff;
+        font-size: 16px;
+    }
+
+    .particulars a:hover {
+        color: #f04d1c;
+    }
+
+    .particulars .hot-line {
+        width: 1px;
+        height: 110px;
+        background-color: #fff;
+    }
+    /*footer-------------end*/
+
+    .img {
+        transition: all 2s;
+    }
+
+    .img:hover {
+        transform: scale(1.1);
+    }
+
+    @media (min-width: 992px) and (max-width:1200px) {
+        #pxb-multi-scenario {
+            #pxb-multi-scenario-all-ele {
+                div>div {
+                    transform: scale(.95)
+                }
+            }
+        }
+        #pxb-main-resource {
+            .row {
+                #pxb-main-resource {
+                    padding-top: 3%;
+                    text-align: center;
+                    h5 {
+                        margin: 2% 0;
+                    }
+                    .quantity {
+                        padding-left: 33%;
+                    }
+                }
+                .pxb-main-resource-screen {
+                    text-align: center;
+                }
+            }
+        }
+        #pxb-put-in {
+            padding: 5% 0;
+            .row {
+                .pxb-put-in-left {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+                .pxb-put-in-right {
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+        #pxb-flexible {
+            #pxb-flexible-all {
+                div>div {
+                    transform: scale(.95);
+                }
+            }
+        }
+        #pxb-networking {
+            .row {
+                .pxb-networking-info {
+                    margin-top: 4%;
+                    text-align: center;
+                }
+                .pxb-networking-map {
+                    div {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+        #pxb-style {
+            .row {
+                .pxb-style-left {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+                .pxb-style-right {
+                    padding-left: 0;
+                    padding-top: 5%;
+                    text-align: center;
+                }
+            }
+        }
+        #pxb-result {
+            .row {
+                .pxb-result-info {
+                    margin-top: 5%;
+                    text-align: center;
+                }
+                .pxb-result-map {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        #pxb-safe-and-reliable {
+            padding: 6% 0;
+            .pxb-safe-and-reliable-map {
+                text-align: center;
+                img {
+                    width: 90%;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width:992px) {
+        #pxb-header {
+            #pxb-navbar {
+                .container-fluid {
+                    padding-left: 5%;
+                    #nav {
+                        padding-left: 0;
+                    }
+                }
+            }
+        }
+        #pxb-multi-scenario {
+            #pxb-multi-scenario-all-ele {
+                div>div {
+                    transform: scale(.9)
+                }
+            }
+        }
+        #pxb-main-resource {
+            .row {
+                #pxb-main-resource {
+                    padding-top: 3%;
+                    text-align: center;
+                    h5 {
+                        margin: 2% 0;
+                    }
+                    .quantity {
+                        display: none;
+                    }
+                }
+                .pxb-main-resource-screen {
+                    text-align: center;
+                }
+            }
+        }
+        #pxb-put-in {
+            padding: 5% 0;
+            .row {
+                .pxb-put-in-left {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+                .pxb-put-in-right {
+                    padding-left: 0;
+                    text-align: center;
+                }
+            }
+        }
+        #pxb-flexible {
+            #pxb-flexible-all {
+                div>div {
+                    transform: scale(.8);
+                }
+            }
+        }
+        #pxb-networking {
+            .row {
+                .pxb-networking-info {
+                    margin-top: 4%;
+                    text-align: center;
+                }
+                .pxb-networking-map {
+                    div {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+        #pxb-style {
+            .row {
+                .pxb-style-left {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+                .pxb-style-right {
+                    padding-left: 0;
+                    padding-top: 5%;
+                    text-align: center;
+                }
+            }
+        }
+        #pxb-result {
+            .row {
+                .pxb-result-info {
+                    margin-top: 5%;
+                    text-align: center;
+                }
+                .pxb-result-map {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        #pxb-safe-and-reliable {
+            padding: 6% 0;
+            .pxb-safe-and-reliable-map {
+                text-align: center;
+                img {
+                    width: 90%;
+                }
+            }
+        }
+        #footer {
+            padding: 0 2%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        #pxb-header {
+            .navbar {
+                height: 50px;
+                .container-fluid {
+                    height: 50px;
+                    margin-left: 12px;
+                    padding-left: 0;
+                    a {
+                        height: 50px;
+                        line-height: 50px;
+                    }
+                    .navbar-header {
+                        height: 50px;
+                        .navbar-toggle {
+                            margin-top: 8px;
+                            padding: 6px 8px;
+                        }
+                        .navbar-brand {
+                            #pxb-fonts-one {
+                                font-size: 26px;
+                            }
+                            #pxb-fonts-two {
+                                font-size: 18px;
+                            }
+                        }
+                    }
+                    #bs-example-navbar-collapse-1 {
+                        background: rgba(0, 0, 0, .6);
+                        #nav {
+                            padding-left: 0;
+                            li {
+                                a {
+                                    height: 40px;
+                                    line-height: 40px;
+                                    font-size: 15px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        #pxb-multi-scenario {
+            #pxb-multi-scenario-all-ele {
+                div>div {
+                    transform: scale(.9)
+                }
+            }
+        }
+        #pxb-multi-scenario {
+            margin-top: 2%;
+            .pxb-multi-scenario-titel {
+                h3 {
+                    font-size: 22px;
+                    margin-bottom: 0;
+                }
+            }
+            #pxb-multi-scenario-all-ele {
+                .row {
+                    margin-top: 0;
+                }
+            }
+        }
+        #pxb-main-resource {
+            .row {
+                #pxb-main-resource-all {
+                    padding-top: 3%;
+                    text-align: center;
+                    h5 {
+                        font-size: 22px;
+                        margin: 2% 0;
+                    }
+                    .quantity {
+                        display: none;
+                    }
+                }
+                .pxb-main-resource-screen {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        #pxb-put-in {
+            padding: 5% 0;
+            .row {
+                .pxb-put-in-left {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+                .pxb-put-in-right {
+                    padding: 0;
+                    text-align: center;
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        #pxb-flexible {
+            .pxb-flexible-titel {
+                h3 {
+                    font-size: 22px;
+                }
+            }
+            #pxb-flexible-all {
+                div {
+                    div {
+                        transform: scale(.8);
+                    }
+                    h4 {
+                        font-size: 18px;
+                        color: #000;
+                    }
+                    p {
+                        color: #787878;
+                        font-size: 16px;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+        #pxb-networking {
+            .row {
+                .pxb-networking-info {
+                    margin-top: 4%;
+                    text-align: center;
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+                .pxb-networking-map {
+                    div {
+                        img {
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+        }
+        #pxb-style {
+            .row {
+                .pxb-style-left {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+                .pxb-style-right {
+                    padding-left: 0;
+                    padding-top: 5%;
+                    text-align: center;
+                    h3 {
+                        font-size: 22px;
+                    }
+                }
+            }
+        }
+        #pxb-result {
+            .row {
+                .pxb-result-info {
+                    margin-top: 5%;
+                    text-align: center;
+                    h3 {
+                        font-size: 22px;
+                    }
+                    p {
+                        font-size: 12px;
+                    }
+                }
+                .pxb-result-map {
+                    text-align: center;
+                    img {
+                        width: 70%;
+                    }
+                }
+            }
+        }
+        #pxb-safe-and-reliable {
+            padding: 6% 0;
+            .pxb-safe-and-reliable-map {
+                text-align: center;
+                img {
+                    width: 90%;
+                }
+            }
+            .pxb-safe-and-reliable-titel {
+                h3 {
+                    font-size: 22px;
+                }
+            }
+        }
+        #footer-small {
+            background-color: #231816;
+            color: #fff;
+            font-size: 16px;
+            padding: 4%;
+            .particulars {
+                a {
+                    font-size: 14px;
+                }
+                .left {
+                    .About-us {
+                        margin-bottom: 10px;
+                        .About-us-one {
+                            font-size: 16px;
+                        }
+                        .About-us-two {
+                            margin: 0 10px;
+                        }
+                    }
+                    .product-center {
+                        margin-bottom: 10px;
+                        .product-center-two {
+                            margin: 0 22px 0 10px;
+                            a {
+                                color: #f14e1c;
+                            }
+                        }
+                    }
+                    .case {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .address {
+                .base {
+                    font-size: 12px;
+                    p {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    @media (max-width:330px) {
+        #pxb-multi-scenario {
+            .pxb-multi-scenario-titel {
+                h3 {
+                    font-size: 22px;
+                }
+            }
+            .small {
+                .row {
+                    #one {
+                        width: 100%;
+                        padding: 0 5%;
+                        margin-bottom: 10px;
+                        .left {
+                            transform: scale(0.8);
+                        }
+                        .right {
+                            margin-left: 8%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .color {
+        color: #f14e1c;
+    }

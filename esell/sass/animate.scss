@@ -1,0 +1,35 @@
+@charset "UTF-8";
+@keyframes slideInUp {
+    from {
+        transform: translate3d(0, 200%, 0);
+        visibility: visible;
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.slideInUp1 {
+    animation: slideInUp .6s;
+}
+.slideInUp2 {
+    animation: slideInUp 1s;
+}
+.slideInUp3 {
+    animation: slideInUp 2s;
+}
+.slideInUp4 {
+    animation: slideInUp 3s;
+}
+.slideInUp5 {
+    animation: slideInUp 4s;
+}
+.slideInUp6 {
+    animation: slideInUp 5s;
+}
+.slideInUp7 {
+    animation: slideInUp 6s;
+}
+.slideInUp8 {
+    animation: slideInUp 7s;
+}

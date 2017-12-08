@@ -1,0 +1,743 @@
+.ys-layout {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    padding: 0; // pc头部
+    .banner-consult {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        z-index: 999;
+        width: 170px;
+        height: 200px;
+        color: #fff;
+        text-align: center;
+        background-color: #f04d1c;
+        opacity: 0.9;
+        font-size: 18px;
+        .quanquan {
+            height: 85px;
+            line-height: 85px;
+            i {
+                font-size: 90px;
+            }
+        }
+        .consult-rexian {
+            height: 45px;
+            line-height: 45px;
+            box-sizing: border-box;
+            .consult-rexian-tubiao {
+                height: 45px;
+                i {
+                    font-size: 35px;
+                }
+            }
+            .consult-rexian-dianhua {
+                font-size: 16px;
+                margin-right: 8px;
+                height: 45px;
+                vertical-align: super;
+            }
+        }
+        .consult-rexian-QQ {
+            margin-top: 5px;
+            color: #f04d1c;
+            span {
+                height: 30px;
+                line-height: 30px;
+                display: inline-block;
+                width: 80%;
+                background-color: #fff;
+            }
+        }
+    }
+    .ys-header {
+        overflow: hidden;
+        height: 120px;
+        line-height: 120px;
+        background-color: #fff;
+        .header-logo {
+            width: 88px;
+            height: 88px;
+            img {
+                width: 100%;
+            }
+        }
+        .header-phone {
+            height: 120px;
+            .header-phone-icon {
+                i {
+                    font-size: 45px;
+                }
+            }
+            .header-phone-number {
+                font-size: 20px;
+            }
+        }
+    } // pc导航
+    .ys-nav {
+        .navbar-default {
+            background-color: #fff;
+            border: none;
+        }
+        .navbar {
+            margin-bottom: 0;
+        }
+        .navbar-default .navbar-toggle:focus,
+        .navbar-default .navbar-toggle:hover {
+            background-color: transparent;
+        }
+        #bs-example-navbar-collapse-1 {
+            position: relative;
+            width: 100%;
+            ul {
+                width: 100%;
+                li {
+                    text-align: center;
+                    a {
+                        display: inline-block;
+                        height: 60px;
+                        line-height: 60px;
+                        width: 14%;
+                        min-width: 150px;
+                        color: #231815;
+                        font-size: 20px;
+                        padding-top: 0;
+                        padding-bottom: 0; // 去掉背景色
+                        background-color: transparent;
+                    }
+                    a:hover {
+                        color: #f04d1c;
+                    }
+                    a.navbar-brand:hover {
+                        border-bottom: none;
+                    }
+                }
+            }
+            .nav-selected {
+                position: absolute;
+                display: none;
+                top: 60px;
+                left: 80px;
+                z-index: 2;
+                color: #fff;
+                width: 27%;
+                min-width: 294px;
+                height: 135px;
+                background-color: #f04d1c;
+                opacity: 0;
+                .triangle-border-up {
+                    width: 0;
+                    height: 0;
+                    border-width: 0 7px 12px 7px;
+                    border-style: solid;
+                    border-color: transparent transparent #f04d1c;
+                    /*透明 透明  灰*/
+                    position: absolute;
+                    top: -12px;
+                    left: 48%;
+                }
+                .nav-reveal {
+                    width: 100%;
+                    .nav-reveal-pingxiaobao {
+                        color: #fff;
+                        width: 49%;
+                        text-align: center;
+                        height: 135px;
+                        display: inline;
+                        .nav-reveal-pingxiaobao-info {
+                            div:nth-child(1) {
+                                i {
+                                    font-size: 50px;
+                                }
+                            }
+                            div:nth-child(2) {
+                                i {
+                                    font-size: 20px;
+                                }
+                            }
+                            p {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                    .nav-reveal-line {
+                        width: 1px;
+                        height: 105px;
+                        background-color: #fff;
+                        margin-top: 20px;
+                        margin-left: 4px;
+                    }
+                    .nav-reveal-yixinfa {
+                        color: #fff;
+                        text-align: center;
+                        height: 135px;
+                        width: 49%;
+                        display: inline;
+                        .nav-reveal-yixinfa-info {
+                            div:nth-child(1) {
+                                i {
+                                    font-size: 50px;
+                                }
+                            }
+                            div:nth-child(2) {
+                                i {
+                                    font-size: 20px;
+                                }
+                            }
+                            p {
+                                font-size: 17px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } // 导航处需要变换的盒子
+    .ys-banner {
+        overflow: hidden;
+        position: relative;
+        .banner-bg {
+            img {
+                width: 100%;
+            }
+        }
+        .banner-shade {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: rgba(0, 0, 0, .4);
+        }
+        .banner-center {
+            position: absolute;
+            top: 42%;
+            left: 0;
+            z-index: 2;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            .esell {
+                margin-bottom: 10px;
+                width: 100%;
+                padding: 0 38%;
+                font-size: 40px;
+                span {
+                    display: inline-block;
+                    height: 60px;
+                    width: 100%;
+                    background-color: #f04d1c;
+                    line-height: 60px;
+                    padding: 0 10px;
+                }
+            }
+            .new-age {
+                width: 100%;
+                padding: 0 32%;
+                span {
+                    display: inline-block;
+                    width: 100%;
+                    text-align: center;
+                    line-height: 60px;
+                    font-size: 30px;
+                }
+            }
+        }
+    } // pc屏效宝
+    .ys-main-pxb {
+        overflow: hidden;
+        padding: 8% 0;
+        .ys-main-pxb-info {
+            padding: 18% 0;
+            h5 {
+                font-size: 30px;
+                color: #231815;
+                font-weight: bold;
+            }
+            p:nth-child(2) {
+                font-size: 20px;
+                color: #231815;
+            }
+            p:nth-child(3),
+            p:nth-child(4) {
+                font-size: 18px;
+                color: #787878;
+            }
+        }
+        .ys-main-pxb-screen {
+            text-align: right;
+        }
+    } // pc易信发
+    .ys-main-yxf {
+        overflow: hidden;
+        padding: 8% 0;
+        background-color: #f8f8f8;
+        .ys-main-yxf-info {
+            text-align: left;
+            padding: 10% 0 0;
+            h5 {
+                font-size: 30px;
+                color: #231815;
+                font-weight: bold;
+            }
+            p:nth-child(2) {
+                font-size: 20px;
+                color: #231815;
+            }
+            p:nth-child(3),
+            p:nth-child(4),
+            p:nth-child(5) {
+                font-size: 18px;
+                color: #787878;
+            }
+        }
+        .ys-main-yxf-screen {
+            text-align: left;
+        }
+    } // pc优势
+    .ys-advantage {
+        overflow: hidden;
+        padding: 6% 0;
+        .me {
+            margin-bottom: 4%;
+            text-align: center;
+            h5 {
+                font-size: 30px;
+                color: #231815;
+                font-weight: bold;
+            }
+            .line {
+                box-sizing: border-box;
+                padding-left: 47%;
+                width: 100%;
+                height: 6px;
+                margin-top: 5px;
+                .left {
+                    width: 6%;
+                    height: 6px;
+                    background-color: #231816;
+                }
+                .right {
+                    width: 6%;
+                    height: 6px;
+                    background-color: #ccc;
+                }
+            }
+        }
+        .benefit {
+            .row {
+                div {
+                    padding-top: 25px;
+                    text-align: center;
+                    p {
+                        margin-top: 20px;
+                        font-size: 18px;
+                        color: #3f3735;
+                    }
+                }
+            }
+        }
+    } // pc资源
+    .ys-main-resource {
+        overflow: hidden;
+        padding: 6% 0 1%;
+        background-color: #f8f8f8;
+        .ys-main-resource-info {
+            padding: 28% 0;
+            h5 {
+                font-size: 30px;
+                color: #231815;
+                font-weight: bold;
+            }
+            .line2 {
+                margin-top: 5px;
+                margin-bottom: 35px;
+                width: 100%;
+                height: 6px;
+                padding-left: 10%;
+                box-sizing: border-box;
+                .left {
+                    width: 8%;
+                    height: 6px;
+                    background-color: #231816;
+                }
+                .right {
+                    width: 8%;
+                    height: 6px;
+                    background-color: #ccc;
+                }
+            }
+            .quantity {
+                color: #000;
+                .province {
+                    text-align: center;
+                    width: 98px;
+                    margin-right: 10px;
+                }
+                .city {
+                    text-align: center;
+                    width: 132px;
+                    margin-right: 10px;
+                }
+                .besel {
+                    text-align: center;
+                    width: 132px;
+                }
+                div {
+                    height: 42px;
+                    line-height: 42px;
+                    border: 1px solid #000;
+                    font-size: 20px;
+                }
+            }
+            p {
+                margin-top: 20px;
+                font-size: 18px;
+                color: #787878;
+            }
+        }
+        .ys-main-resource-screen {
+            text-align: right;
+        }
+    } // pc服务
+    .ys-main-serve {
+        position: relative;
+        .ys-main-serve-bg {
+            img {
+                width: 100%;
+            }
+        }
+        .ys-main-serve-center {
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 2;
+            color: #fff;
+            height: 150px;
+            margin: auto;
+            .esell {
+                height: 60px;
+                font-size: 30px;
+                span {
+                    font-weight: bold;
+                    padding: 0 10px;
+                }
+            }
+            .new-age {
+                height: 60px;
+                padding: 0 30%;
+                font-size: 30px;
+            }
+            span {
+                display: inline-block;
+                width: 100%;
+                line-height: 60px;
+                height: 60px;
+                text-align: center;
+            }
+        }
+    } // pc案例
+    .ys-main-case {
+        overflow: hidden;
+        padding: 8% 0;
+        .ys-main-case-screen {
+            position: relative;
+            text-align: left;
+            .shade {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                background-color: #000;
+                opacity: 0.1;
+                z-index: 1;
+                width: 100%;
+                height: 100%;
+            }
+        }
+        .ys-main-case-info {
+            text-align: left;
+            h5 {
+                font-size: 30px;
+                color: #231815;
+                font-weight: bold;
+            }
+            .line3 {
+                margin-top: 5px;
+                margin-bottom: 35px;
+                width: 100%;
+                height: 6px;
+                padding-left: 7%;
+                box-sizing: border-box;
+                .left {
+                    width: 12%;
+                    height: 6px;
+                    background-color: #231816;
+                }
+                .right {
+                    width: 12%;
+                    height: 6px;
+                    background-color: #ccc;
+                }
+            }
+            p:nth-child(3) {
+                margin-top: 20px;
+                color: #000;
+                font-size: 20px;
+            }
+            p:nth-child(4) {
+                margin-top: 10px;
+                font-weight: bold;
+                color: #000;
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+            p:nth-child(5),
+            p:nth-child(6),
+            p:nth-child(7) {
+                font-size: 18px;
+                color: #787878;
+                margin-top: 5px;
+            }
+            .button {
+                margin-top: 30px;
+            }
+        }
+    }
+    /*footer-------------begin*/
+    .footer {
+        padding: 0 5%;
+        height: 300px;
+        width: 100%;
+        background-color: #231816;
+        box-sizing: border-box;
+        padding: 0 12.5%;
+        color: #fff;
+    }
+    .footer .particulars {
+        font-size: 18px;
+        padding-top: 50px;
+        height: 250px;
+        box-sizing: border-box;
+    }
+    .footer .address {
+        height: 50px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .About-us .About-us-one {
+        font-size: 18px;
+    }
+    .About-us .About-us-two {
+        margin-top: 30px;
+    }
+    .product-center .product-center-two {
+        margin-top: 30px;
+    }
+    .particulars a {
+        color: #fff;
+        font-size: 16px;
+    }
+    .particulars a:hover {
+        color: #f04d1c;
+    }
+    .particulars .hot-line {
+        width: 1px;
+        height: 110px;
+        background-color: #fff;
+    }
+    /*footer-------------end*/
+}
+
+// 移动端的样式
+@media (max-width: 768px) {
+    // 导航
+    .ys-nav {
+        line-height: 45px;
+        #ys-nav {
+            .small-logo {
+                margin-left: 10px;
+                display: inline-block;
+                width: 40px;
+                height: 40px;
+                img {
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+            .navbar-toggle {
+                padding: 6px 8px;
+                margin-top: 12px;
+            }
+            #bs-example-navbar-collapse-1 {
+                border: none;
+                margin: 0;
+                a {
+                    height: 40px;
+                    line-height: 40px;
+                    width: 100%;
+                }
+                li:hover {
+                    color: #f04d1c;
+                }
+            }
+            .navbar-nav {
+                margin: 0;
+            }
+            #navbar-header {
+                #navbar-toggle:hover,
+                #navbar-toggle:focus {
+                    background: #fff;
+                }
+            }
+        }
+    } // 广告1
+    #ys-banner-two {
+        .banner-bg {
+            img {
+                width: 100%;
+            }
+        }
+    } // 服务
+    .ys-main-serve-two {
+        img {
+            width: 100%;
+        }
+    } // 屏效宝
+    #ys-main-pxb {
+        padding: 2% 0;
+        .ys-banxin {
+            .ys-main-pxb-info {
+                padding: 5% 0;
+                text-align: center;
+            }
+            .ys-main-pxb-screen {
+                text-align: center;
+                img {
+                    width: 70%;
+                }
+            }
+        }
+    } // 易信发
+    #ys-main-yxf {
+        padding: 5% 0;
+        .ys-banxin {
+            .ys-main-yxf-screen {
+                text-align: center;
+                img {
+                    width: 70%;
+                }
+            }
+            .ys-main-yxf-info {
+                width: 100%;
+                padding: 5% 0;
+                text-align: center;
+            }
+        }
+    } // 优势
+    #ys-advantage {
+        padding: 5% 0;
+        .ys-banxin {
+            .benefit {
+                p {
+                    margin: 8% 0;
+                }
+            }
+        }
+    } // 资源
+    #ys-main-resource {
+        padding: 5% 0;
+        .ys-banxin {
+            .ys-main-resource-info {
+                text-align: center;
+                padding: 5% 0;
+            }
+            .ys-main-resource-screen {
+                text-align: center;
+                img {
+                    width: 80%;
+                }
+            }
+        }
+    } // 案例
+    #ys-main-case {
+        .ys-main-case-info {
+            width: 100%;
+            text-align: center;
+        }
+        .ys-main-case-screen {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    } // 底部
+    #footer-small {
+        background-color: #231816;
+        color: #fff;
+        font-size: 16px;
+        padding: 4%;
+        .particulars {
+            a {
+                font-size: 14px;
+            }
+            .left {
+                .About-us {
+                    margin-bottom: 10px;
+                    .About-us-one {
+                        font-size: 16px;
+                    }
+                    .About-us-two {
+                        margin: 0 10px;
+                    }
+                }
+                .product-center {
+                    margin-bottom: 10px;
+                    .product-center-two {
+                        margin: 0 22px 0 10px;
+                    }
+                }
+                .case {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .address {
+            .base {
+                font-size: 12px;
+                p {
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:1200px) {
+    #ys-advantage {
+        .effect {
+            margin-top: 50px;
+        }
+        .cost {
+            margin-top: 50px;
+        }
+    }
+}
+
+.btn:hover {
+    border: #f04d1c;
+    background-color: #f04d1c;
+    color: #fff;
+}
+
+.img {
+    transition: all 1.5s;
+}
+
+.img:hover {
+    transform: scale(1.1);
+}
