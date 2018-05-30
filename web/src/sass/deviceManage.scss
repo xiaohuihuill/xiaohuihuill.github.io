@@ -1,0 +1,71 @@
+    @import "base.scss";
+    .device-manage {
+        width: 100%;
+        height: 100%;
+        .top {
+            line-height: 56px;
+            margin-left: 20px;
+            span {
+                font-size: 12px;
+            }
+            .crumbs {}
+        }
+        .bottom {
+            background-color: $white;
+            padding: 20px;
+            .device-manage-condition {
+                .condition {
+                    .condition-info {
+                        padding: 20px;
+                        background: $bgColor;
+                    }
+                    .condition-content {
+                        margin-bottom: 14px;
+                        .popularization-plan {
+                            line-height: 30px;
+                            .popularization-plan-info {}
+                            .popularization-plan-input {}
+                        }
+                    }
+                    .condition-search {
+                        margin-left: 77px;
+                        margin-top: 5px;
+                        a {
+                            margin-right: 6px;
+                        }
+                    }
+                    .advertising-operation {
+                        margin: 20px 0;
+                        a {
+                            margin-right: 6px;
+                        }
+                        a:last-child {
+                            margin-right: 0;
+                        }
+                    }
+                    .row3 {
+                        box-sizing: border-box;
+                        .bg {
+                            text-align: center;
+                            width: 120px;
+                            height: 34px;
+                            cursor: pointer;
+                            line-height: 34px;
+                            border: 1px solid $sublineColor;
+                            border-bottom: none;
+                            border-right: none;
+                            box-sizing: border-box;
+                        }
+                        .bg:last-child {
+                            border-right: 1px solid $sublineColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .el-breadcrumb {
+        font-size: 14px;
+        line-height: 1;
+    }

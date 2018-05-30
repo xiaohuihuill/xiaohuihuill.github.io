@@ -1,0 +1,72 @@
+@import "./base.scss";
+.add-device {
+    height: 100%;
+    width: 100%;
+    .add-device-info {
+        width: 100%;
+        height: 100%;
+        background: $white;
+        .add-device-number {
+            display: flex;
+            height: 0.98rem;
+            margin-left: 0.22rem;
+            box-sizing: border-box;
+            align-items: center;
+            border-bottom: 1px solid $sublineColor;
+            &-left {
+                width: 1.6rem;
+                font-size: 0.28rem;
+                color: $impTextColor;
+                span {
+                    color: $impColor;
+                }
+            }
+            &-right {
+                flex: 1;
+                .write-num {
+                    .write-input {
+                        display: flex;
+                        li {
+                            width: 0.4rem;
+                            height: 0.48rem;
+                            text-align: center;
+                            border: 1px solid $sublineColor;
+                            input {
+                                font-size: .28rem;
+                                width: 0.4rem;
+                                height: 0.48rem;
+                                text-align: center;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .add-device-name {
+            border-bottom: 1px solid $sublineColor;
+            display: flex;
+            height: 0.98rem;
+            box-sizing: border-box;
+            align-items: center;
+            background: $white;
+            &-left {
+                width: 1.6rem;
+                color: $impTextColor;
+                padding-left: 0.22rem;
+                font-size: 0.28rem;
+                span {
+                    color: $impColor;
+                }
+            }
+            &-right {
+                flex: 1;
+                height: 100%;
+                input{
+                    font-size: .28rem;
+                    height: 100%;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

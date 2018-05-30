@@ -1,0 +1,93 @@
+@import "base.scss";
+.case {
+    .banner {
+        background-color: $white;
+        height: 340px;
+        width: 100%;
+        min-width: 1372px;
+        background: url("../../../assets/images/scene_banner_03.jpg") no-repeat left top;
+        background-size: 100% 100%;
+        .text {
+            color: $white;
+            text-align: center;
+            h5 {
+                line-height: 64px;
+                padding-top: 80px;
+                font-size: 30px;
+            }
+            p {
+                line-height: 35px;
+                font-size: 20px;
+                padding-top: 0;
+            }
+            p:nth-child(2) {}
+        }
+    }
+    .exhibition {
+        background-color: $white;
+        width: 100%;
+        min-width: 1372px;
+        h3 {
+            line-height: 108px;
+            font-size: 30px;
+            padding-top: 12px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .content {
+            padding: 0 3%;
+            width: 100%;
+            box-sizing: border-box;
+            text-align: center;
+            .dispaly {
+                margin-right: 10px;
+                .enterprise-img {
+                    width: 332px;
+                    height: 255px;
+                    background: url("../../../assets/images/scene_main.jpg") no-repeat left top;
+                }
+                .cinema-img {
+                    width: 330px;
+                    height: 255px;
+                    background: url("../../../assets/images/scene_main.jpg") no-repeat -350px top;
+                }
+                .restaurant-img {
+                    width: 330px;
+                    height: 255px;
+                    background: url("../../../assets/images/scene_main.jpg") no-repeat -700px top;
+                }
+                .si-shop-img {
+                    width: 330px;
+                    height: 255px;
+                    background: url("../../../assets/images/scene_main.jpg") no-repeat -1050px top;
+                }
+                .gallery-img {
+                    width: 330px;
+                    height: 255px;
+                    background: url("../../../assets/images/scene_main.jpg") no-repeat left -315px;
+                }
+                .market-img {
+                    width: 330px;
+                    height: 255px;
+                    background: url("../../../assets/images/scene_main.jpg") no-repeat -350px -315px;
+                }
+                .supermarket-img {
+                    width: 330px;
+                    height: 255px;
+                    background: url("../../../assets/images/scene_main.jpg") no-repeat -700px -315px;
+                }
+                .hotel-img {
+                    width: 330px;
+                    height: 255px;
+                    background: url("../../../assets/images/scene_main.jpg") no-repeat -1050px -315px;
+                }
+                p {
+                    text-align: center;
+                    line-height: 44px;
+                    padding-bottom: 17px;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

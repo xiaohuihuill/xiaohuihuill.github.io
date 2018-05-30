@@ -1,0 +1,17 @@
+@charset "utf-8";
+$impColor: #ff5663;
+$bgColor: #eeeeee;
+$blue: #1e71f9;
+$green: #48bb0f;
+$yellow: #ffcd2c;
+$white: #ffffff;
+$impTextColor: #333333;
+$contenTextColor: #666666;
+$shallowColor: #999999; 
+$sublineColor: #dedede;
+$textColor:#2A2A2A;
+$defaultText:#d4d4d4;
+input[type=search]::-webkit-search-cancel-button{
+    -webkit-appearance: none;//此处只是去掉默认的小×
+}
+ 

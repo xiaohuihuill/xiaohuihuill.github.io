@@ -1,0 +1,82 @@
+.mint-navbar .mint-tab-item {
+  padding: 0;
+}
+
+.mint-navbar .mint-tab-item-label {
+  color: #666666;
+  font-size: .3rem;
+  line-height: .75rem;
+  height: .75rem;
+}
+
+.mint-navbar .mint-tab-item.is-selected {
+  color: #ff5663;
+  border-bottom: 3px solid #ff5663;
+  z-index: 200;
+}
+
+.mint-navbar .mint-tab-item.is-selected .mint-tab-item-label {
+  color: #ff5663;
+}
+
+.mint-tab-item-label i {
+  font-size: .45rem;
+}
+
+.mint-tab-item-label div {
+  margin-top: .06rem;
+  font-size: .24rem;
+}
+
+.mint-tabbar > .mint-tab-item.is-selected {
+  color: #ff5663;
+  background-color: #eeeeee;
+}
+
+.mint-tab-item.is-selected .mint-tab-item-label i,
+.mint-tab-item.is-selected .mint-tab-item-label div {
+  color: #ff5663;
+}
+
+.mint-tabbar.is-fixed {
+  height: 1rem;
+}
+
+.mint-tabbar.is-fixed .router-link-exact-active.router-link-active a {
+  color: #ff5663;
+}
+
+.mint-tabbar .mint-tab-item {
+  padding: .15rem 0;
+}
+
+.mt-range-thumb {
+  top: 6px;
+}
+
+.mt-range-content .mt-range-runway {
+  border-top-width: 3px !important;
+  border-top-color: #dedede;
+  right: -25px;
+}
+
+.mt-range-content .mt-range-thumb {
+  width: .5rem;
+  height: .5rem;
+}
+
+.mt-range-content .mt-range-progress {
+  background-color: #ff5663;
+}
+
+.mint-tab-container {
+  height: 100%;
+}
+
+.mint-tab-container .mint-tab-container-wrap {
+  height: 100%;
+}
+
+.mint-tab-container .mint-tab-container-wrap .mint-tab-container-item {
+  height: 100%;
+}

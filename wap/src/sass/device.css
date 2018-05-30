@@ -1,0 +1,114 @@
+input[type=search]::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+
+.device {
+  height: 100%;
+  width: 100%;
+}
+
+.device .adv_inner {
+  box-sizing: border-box;
+  padding-top: 0.2rem;
+  height: 2.26rem;
+  background-color: #ff5663;
+}
+
+.device .adv_inner .search .search_wrapper {
+  height: 100%;
+  padding-top: 0;
+}
+
+.device .adv_inner .search #search_form {
+  color: #ffffff;
+}
+
+.device .adv_inner .search #search_form input {
+  position: relative;
+  height: 0.54rem;
+  width: 7.06rem;
+  border-radius: 0.05rem;
+  text-align: center;
+  font-size: .26rem;
+}
+
+.device .adv_inner .dev_box {
+  color: #ffffff;
+  margin-top: 0.24rem;
+  display: flex;
+}
+
+.device .adv_inner .dev_box .devices_text {
+  flex: 1;
+  text-align: center;
+}
+
+.device .adv_inner .dev_box .devices_text i {
+  font-size: 0.62rem;
+}
+
+.device .adv_inner .dev_box .devices_text p {
+  font-size: 0.28rem;
+}
+
+.device .navbar {
+  height: calc(100% - 2.26rem);
+}
+
+.device .navbar .mint-navbar {
+  height: 0.8rem;
+}
+
+.device .navbar .device-info {
+  box-sizing: border-box;
+  height: 2.39rem;
+  padding: .4rem 0;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid #dedede;
+}
+
+.device .navbar .device-info-left {
+  box-sizing: border-box;
+  padding: 0.2rem 0.26rem 0.2rem 0.22rem;
+  width: 1.48rem;
+  color: #48bb0f;
+  text-align: center;
+}
+
+.device .navbar .device-info-left div:first-child i {
+  font-size: 0.8rem;
+}
+
+.device .navbar .device-info-left div:last-child {
+  font-size: 0.3rem;
+}
+
+.device .navbar .device-info-content {
+  width: 100%;
+}
+
+.device .navbar .device-info-content div {
+  margin-top: .18rem;
+}
+
+.device .navbar .device-info-content div p:nth-child(1) {
+  font-size: .32rem;
+}
+
+.device .navbar .device-info-content div p:nth-child(2),
+.device .navbar .device-info-content div p:nth-child(3) {
+  margin-top: .05rem;
+  font-size: .28rem;
+  color: #666666;
+}
+
+.device .navbar .device-info-right {
+  width: 0.4rem;
+  padding-right: 0.12rem;
+  line-height: 1.57rem;
+}
+
+.device .navbar .device-info-right i {
+  font-size: 0.22rem;
+}

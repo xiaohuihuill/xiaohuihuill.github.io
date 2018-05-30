@@ -1,0 +1,115 @@
+@import "base.scss";
+.expenses {
+    .banner {
+        height: 734px;
+        width: 100%;
+        background-color: $white;
+        .content {
+            width: 100%;
+            box-sizing: border-box;
+            min-width: 1376px;
+            background: url('../../../assets/images/price_main_03.jpg') no-repeat left top;
+            background-size: 100% 100%;
+            height: 100%;
+            h3 {
+                line-height: 54px;
+                padding-top: 123px;
+                font-size: 40px;
+                text-align: center;
+                font-weight: bold;
+            }
+            h4 {
+                text-align: center;
+                line-height: 46px;
+                font-size: 28px;
+            }
+            .taocan {
+                text-align: center;
+                margin-top: 30px;
+                .month {
+                    margin-right: 6%;
+                    height: 300px;
+                    width: 400px;
+                    background-color: $white;
+                    padding-top: 44px;
+                    h5 {
+                        font-size: 30px;
+                        color: $impColor;
+                        line-height: 75px;
+                    }
+                    ul {
+                        li {
+                            margin-left: -40px;
+                            list-style: inside;
+                            line-height: 42px;
+                            font-size: 22px;
+                        }
+                        .left {
+                            margin-left: -60px;
+                        }
+                    }
+                    p {
+                        margin-left: -50px;
+                        font-size: 22px;
+                        line-height: 42px;
+                    }
+                }
+                .half-a-year {
+                    margin-right: 6%;
+                    height: 300px;
+                    width: 400px;
+                    background-color: $white;
+                    padding-top: 44px;
+                    h5 {
+                        font-size: 30px;
+                        color: $impColor;
+                        line-height: 75px;
+                    }
+                    ul {
+                        li {
+                            margin-left: -40px;
+                            list-style: inside;
+                            line-height: 42px;
+                            font-size: 22px;
+                        }
+                        .left {
+                            margin-left: -60px;
+                        }
+                    }
+                    p {
+                        margin-left: -50px;
+                        font-size: 22px;
+                        line-height: 42px;
+                    }
+                }
+                .one-year {
+                    height: 300px;
+                    width: 400px;
+                    background-color: $white;
+                    padding-top: 44px;
+                    h5 {
+                        font-size: 30px;
+                        color: $impColor;
+                        line-height: 75px;
+                    }
+                    ul {
+                        li {
+                            margin-left: -40px;
+                            list-style: inside;
+                            line-height: 42px;
+                            font-size: 22px;
+                        }
+                        .left {
+                            margin-left: -60px;
+                        }
+                    }
+                    p {
+                        margin-left: -50px;
+                        font-size: 22px;
+                        line-height: 42px;
+                    }
+                }
+            }
+        }
+    }
+}

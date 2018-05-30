@@ -1,0 +1,350 @@
+@import "base.scss";
+.yxf-home-page {
+    color: $impTextColor;
+    font-size: 12px;
+    .top {
+        line-height: 56px;
+        padding-left: 20px;
+        .crumbs {}
+    } // line 
+    .yxf-home-page-noEquipment {
+        padding: 20px;
+        background-color: $white;
+    } // line 1-1
+    .yxf-home-page-equipment {
+        padding: 20px;
+        background-color: $white;
+        p:nth-child(2) {
+        }
+    } // line 2
+    .yxf-home-page-two {
+        margin-top: 20px;
+        position: relative;
+        padding: 20px;
+        background-color: $white;
+        .yxf-operation {
+            padding-left: 15px;
+            .operation {
+                font-size: 14px;
+            }
+        }
+        .yxf-operation-info {
+            width: 100%;
+            padding: 20px;
+            padding-left: 0px;
+            margin-right: 50px;
+            padding-bottom: 0;
+            .yxf-operation-download-info {
+                // 软件下载
+                .download {
+                    position: relative;
+                    background-color: $bgColor;
+                    // width: 260px;
+                    width: 30%;
+                    height: 100px;
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                    margin-left: 7px;
+                    .download-left {
+                        font-size: 50px;
+                        margin-top: 15px;
+                    }
+                    .download-right {
+                        margin-left: 5%;
+                        margin-top: 25px;
+                        .download-right-info {
+                            font-size: 12px;
+                        }
+                        .download-right-version {
+                            margin-top: 10px;
+                            font-size: 12px;
+                            div:nth-child(1) {
+                               margin-right: 15px;
+                            }
+                        }
+                    }
+                }
+                .download:before {
+                    border-bottom: 50px solid transparent;
+                    border-left: 30px solid $bgColor;
+                    border-right: 0px solid transparent;
+                    border-top: 50px solid transparent;
+                    content: "";
+                    position: absolute;
+                    left: 100%;
+                    top: 0;
+                    z-index: 1;
+                } // 添加设备
+                .add-equipment {
+                    margin-left: 7px;
+                    position: relative;
+                    background-color: $bgColor;
+                    // width: 230px;
+                    width: 27%;
+                    height: 100px;
+                    padding-left: 50px;
+                    margin-bottom: 10px;
+                    .add-equipment-left {
+                        font-size: 50px;
+                        margin-top: 15px;
+                    }
+                    .add-equipment-right {
+                        margin-left: 10px;
+                        margin-top: 27px;
+                        .add-equipment-right-info {
+                           font-size: 12px;
+                        }
+                        .add-equipment-right-content {
+                            margin-top: 5px;
+                            font-size: 12px;
+                            div:nth-child(1) {
+                                margin-right: 15px;
+                                color: $contenTextColor;
+                            }
+                        }
+                    }
+                }
+                .add-equipment:after {
+                    border-bottom: 50px solid transparent;
+                    border-left: 30px solid $white;
+                    border-right: 0px solid transparent;
+                    border-top: 50px solid transparent;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                }
+                .add-equipment:before {
+                    border-bottom: 50px solid transparent;
+                    border-left: 30px solid $bgColor;
+                    border-right: 0px solid transparent;
+                    border-top: 50px solid transparent;
+                    content: "";
+                    position: absolute;
+                    left: 100%;
+                    z-index: 1;
+                } // 发布广告
+                .issue-advertising {
+                    margin-left: 7px;
+                    position: relative;
+                    background-color: $bgColor;
+                    // width: 230px;
+                    width: 27%;
+                    height: 100px;
+                    padding-left: 50px;
+                    margin-bottom: 10px;
+                    .issue-advertising-left {
+                        font-size: 50px;
+                        margin-top: 15px;
+                    }
+                    .issue-advertising-right {
+                        margin-left: 10px;
+                        margin-top: 27px;
+                        .issue-advertising-right-info {
+                            font-size: 12px;
+                        }
+                        .issue-advertising-right-content {
+                            margin-top: 5px;
+                            div:nth-child(1) {
+                                margin-right: 15px;
+                                color: $contenTextColor;
+                            }
+                        }
+                    }
+                }
+                .issue-advertising:after {
+                    border-bottom: 50px solid transparent;
+                    border-left: 30px solid $white;
+                    border-right: 0px solid transparent;
+                    border-top: 50px solid transparent;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                }
+                .issue-advertising:before {
+                    border-bottom: 50px solid transparent;
+                    border-left: 30px solid $bgColor;
+                    border-right: 0px solid transparent;
+                    border-top: 50px solid transparent;
+                    content: "";
+                    position: absolute;
+                    left: 100%;
+                    z-index: 1;
+                } // 广告审核
+                .advertising-aduit {
+                    margin-left: 7px;
+                    position: relative;
+                    background-color: $bgColor;
+                    // width: 230px;
+                    width: 30%;
+                    height: 100px;
+                    padding-left: 20px;
+                    margin-bottom: 10px;
+                    .advertising-aduit-left {
+                        font-size: 50px;
+                        margin-top: 15px;
+                    }
+                    .advertising-aduit-right {
+                        margin-left: 20px;
+                        margin-top: 27px;
+                        .advertising-aduit-right-info {
+                            font-size: 12px;
+                        }
+                        .advertising-aduit-right-content {
+                            margin-top: 5px;
+                            div:nth-child(1) {
+                                margin-right: 15px;
+                                color: $contenTextColor;
+                            }
+                        }
+                    }
+                }
+                // .advertising-aduit:after {
+                //     border-bottom: 50px solid transparent;
+                //     border-left: 30px solid $white;
+                //     border-right: 0px solid transparent;
+                //     border-top: 50px solid transparent;
+                //     content: "";
+                //     position: absolute;
+                //     left: 0;
+                // }
+                .advertising-aduit:before {
+                    border-bottom: 50px solid transparent;
+                    border-left: 30px solid $bgColor;
+                    border-right: 0px solid transparent;
+                    border-top: 50px solid transparent;
+                    content: "";
+                    position: absolute;
+                    left: 100%;
+                    z-index: 1;
+                } // 终端播放
+                .play {
+                    margin-left: 7px;
+                    position: relative;
+                    background-color: $bgColor;
+                    // width: 257px;
+                    width: 27%;
+                    height: 100px;
+                    padding-left: 50px;
+                    .play-left {
+                        font-size: 50px;
+                        margin-top: 15px;
+                    }
+                    .play-right {
+                        margin-left: 10px;
+                        margin-top: 27px;
+                        .play-right-info {
+                            font-size: 12px;
+                        }
+                        .play-right-content {
+                            margin-top: 5px;
+                            div:nth-child(1) {
+                                margin-right: 15px;
+                                color: $contenTextColor;
+                            }
+                        }
+                    }
+                }
+                .play:after {
+                    border-bottom: 50px solid transparent;
+                    border-left: 30px solid $white;
+                    border-right: 0px solid transparent;
+                    border-top: 50px solid transparent;
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+    } // line 3
+    .yxf-home-page-three {
+        margin-top: 20px;
+        background-color: $white;
+        padding: 20px;
+        .yxf-home-page-ad-statistics {
+            .yxf-home-page-statistics {
+                .statistics {
+                    padding-left: 15px;
+                    font-size: 14px;
+                    color: $impTextColor;
+                }
+                .yxf-home-page-quantity {
+                    margin-top: 10px;
+                    div {
+                        text-align: center;
+                        width: 100px;
+                        span {
+                            display: inline-block;
+                            font-size: 24px;
+                            color: $blue;
+                        }
+                    }
+                    .statistics-number {}
+                    .statistics-centre {}
+                    .statistics-wait-play {}
+                    .statistics-wait-audit {}
+                    .statistics-audit-no-pass {}
+                    .statistics-out-of-date {}
+                    .statistics-more {
+                        div {
+                            margin-top: 6px;
+                            i {
+                                font-size: 20px;
+                            }
+                            p {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    } // line 4
+    .yxf-home-page-four {
+        margin: 20px 0;
+        background-color: $white;
+        padding: 20px;
+        .yxf-home-page-device-statistics {
+            .yxf-home-page-statistics {
+                .statistics {
+                    padding-left: 15px;
+                    font-size: 14px;
+                    color: $impTextColor;
+                }
+                .yxf-home-page-device {
+                    margin-top: 10px;
+                    div {
+                        text-align: center;
+                        width: 100px;
+                        span {
+                            display: inline-block;
+                            font-size: 24px;
+                            color: $blue;
+                        }
+                        p {
+                            color: $impTextColor;
+                        }
+                    }
+                    .statistics-all-device {}
+                    .statistics-on-line-device {}
+                    .statistics-past-due-device {}
+                    .statistics-upcoming-device {}
+                    .statistics-off-line-device {}
+                    .statistics-more {
+                        div {
+                            margin-top: 6px;
+                            i {
+                                font-size: 20px;
+                            }
+                            p {
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+i {
+    color: $blue;
+    font-size: 44px;
+}

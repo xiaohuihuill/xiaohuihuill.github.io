@@ -1,0 +1,222 @@
+.issue-advertising {
+  width: 100%;
+  height: 100%;
+}
+
+.issue-advertising .top {
+  line-height: 56px;
+  padding-left: 20px;
+}
+
+.issue-advertising .top .crumbs {
+  font-size: 12px;
+}
+
+.issue-advertising .bottom {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.issue-advertising .bottom .cf::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-title {
+  height: 34px;
+  background-color: #f5f5f5;
+  line-height: 34px;
+  padding-left: 20px;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-title span {
+  font-size: 15px;
+  color: #333333;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-info {
+  padding-left: 20px;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-info .popularization-plan {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-info .put-in-time {
+  margin-top: 20px;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-info .start-end-time {
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-info .advertising-type {
+  margin-top: 20px;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-type .template-show {
+  margin-top: 20px;
+  height: 400px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-type .template-show .template-show-info {
+  width: 600px;
+  height: 100%;
+  background: url("./../../assets/images/device_group_manage/advertising_bg.png") no-repeat 0 0;
+  background-size: 100% 100%;
+  position: relative;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-type .template-show .template-show-info .template-show-shade {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-type .template-show .template-show-info .template {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 180px;
+  height: 104px;
+  margin-top: -52px;
+  margin-left: -90px;
+  z-index: 1;
+  color: #ffffff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-type .template-show .template-show-info .template .template-set-jurisdiction {
+  border: 1px solid #ffffff;
+  height: 80px;
+  width: 80px;
+  border-radius: 4px;
+  text-align: center;
+  padding-top: 15px;
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-type .template-show .template-show-info .template .template-set-jurisdiction a i {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+.issue-advertising .bottom .issue-common-advertising .issue-common-advertising-type .template-show .template-show-info .template .template-set-jurisdiction a span {
+  color: #ffffff;
+}
+
+.issue-advertising .bottom .title_box .templateName {
+  float: left;
+}
+
+.issue-advertising .bottom .title_box .prve {
+  float: left;
+  margin-left: 300px;
+  margin-top: 5px;
+}
+
+.issue-advertising .bottom .issue-urgency-advertising {
+  margin-top: 30px;
+}
+
+.issue-advertising .bottom .issue-urgency-advertising .issue-urgency-advertising-title {
+  height: 36px;
+  padding-left: 20px;
+  background-color: #f5f5f5;
+  line-height: 36px;
+}
+
+.issue-advertising .bottom .issue-urgency-advertising .issue-urgency-advertising-title span {
+  font-size: 14px;
+  color: #333333;
+}
+
+.issue-advertising .bottom .submit {
+  margin-top: 20px;
+}
+
+.el-breadcrumb {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.select-device-group-dialog .device-group-dialog-screen-type .device-group-dialog-screen-type-info span {
+  margin-right: 15%;
+}
+
+.home-fenyeCon {
+  width: 100%;
+}
+
+.home-fenyeCon .all-material {
+  margin-bottom: 20px;
+  padding: 24px 20px;
+  border: 1px solid #e5e5e5;
+}
+
+.home-fenyeCon .all-material .material-file {
+  width: 124px;
+  height: 200px;
+  margin-right: 32px;
+  margin-bottom: 24px;
+}
+
+.home-fenyeCon .all-material .material-file .file-type {
+  margin-bottom: 10px;
+  width: 124px;
+  height: 124px;
+}
+
+.home-fenyeCon .all-material .material-file .file-type img {
+  width: 124px;
+  height: 124px;
+}
+
+.home-fenyeCon .all-material .material-file .file-name {
+  margin-bottom: 15px;
+}
+
+.home-fenyeCon .all-material .material-file .file-name .file-name-left {
+  margin-right: 8px;
+}
+
+.home-fenyeCon .all-material .material-file .file-name .file-name-right {
+  width: 98px;
+  height: 40px;
+}
+
+.home-fenyeCon .all-material .material-file .file-name .file-name-right span {
+  color: #333333;
+}
+
+.home-fenyeCon .all-material .material-file .file-operation-file {
+  padding: 0 30px;
+}
+
+.home-fenyeCon .all-material .material-file .file-operation-file div {
+  font-size: 13px;
+  color: #1e71f9;
+}
+
+.home-fenyeCon .all-material .material-file .file-operation-file .delete {
+  margin-left: 5px;
+}
+
+.home-fenyeCon .all-material .material-file .file-operation-other div {
+  cursor: pointer;
+  margin-left: 4px;
+  font-size: 13px;
+  color: #1e71f9;
+}
+
+.home-fenyeCon .paging {
+  text-align: center;
+}

@@ -1,0 +1,93 @@
+@charset "utf-8";
+$impColor: #ff5663;
+$bgColor: #eeeeee;
+$blue: #1e71f9;
+$green: #48bb0f;
+$yellow: #ffcd2c;
+$white: #ffffff;
+$impTextColor: #333333;
+$contenTextColor: #666666;
+$shallowColor: #999999;
+$sublineColor: #dedede;
+// mintui样式覆盖
+// navbar样式覆盖
+.mint-navbar .mint-tab-item {
+    padding: 0;
+}
+
+.mint-navbar .mint-tab-item-label {
+    color: $contenTextColor;
+    font-size: .3rem;
+    line-height: .75rem;
+    height: .75rem;
+}
+
+.mint-navbar .mint-tab-item.is-selected {
+    color: $impColor;
+    border-bottom: 3px solid $impColor;
+    z-index: 200;
+}
+
+.mint-navbar .mint-tab-item.is-selected .mint-tab-item-label {
+    color: $impColor;
+}
+
+.mint-tab-item-label i {
+    font-size: .45rem;
+}
+
+.mint-tab-item-label div {
+    margin-top: .06rem;
+    font-size: .24rem;
+}
+
+.mint-tabbar>.mint-tab-item.is-selected {
+    color: $impColor;
+    background-color: $bgColor;
+}
+
+.mint-tab-item.is-selected .mint-tab-item-label i,
+.mint-tab-item.is-selected .mint-tab-item-label div {
+    color: $impColor;
+}
+
+.mint-tabbar.is-fixed {
+    height: 1rem
+}
+
+.mint-tabbar.is-fixed .router-link-exact-active.router-link-active a {
+    color: $impColor;
+}
+
+.mint-tabbar .mint-tab-item {
+    padding: .15rem 0;
+}
+
+.mt-range-thumb {
+    top: 6px;
+}
+
+.mt-range-content .mt-range-runway {
+    border-top-width: 3px!important;
+    border-top-color: $sublineColor;
+    right: -25px;
+}
+
+.mt-range-content .mt-range-thumb {
+    width: .5rem;
+    height: .5rem;
+}
+
+.mt-range-content .mt-range-progress {
+    background-color: $impColor;
+}
+
+.mint-tab-container {
+    height: 100%;
+    .mint-tab-container-wrap {
+        height: 100%;
+        .mint-tab-container-item {
+            height: 100%;
+        }
+    }
+}

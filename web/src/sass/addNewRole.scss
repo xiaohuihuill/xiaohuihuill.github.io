@@ -1,0 +1,65 @@
+@import "base.scss";
+.material-manage {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    .top {
+        line-height: 56px;
+        margin-left: 20px;
+        .crumbs {
+            font-size: 12px;
+            
+        }
+    }
+    .bottom {
+        background-color: #fff;
+        padding: 20px;
+        .row1 {
+            padding: 0 0 20px 0;
+            background: #f9f9f9;
+            .material-name {
+                height: 30px;
+                line-height: 30px;
+                &-left {}
+                &-right {
+                    margin-left: 20px;
+                }
+            }
+            .material-search {
+                margin-top: 20px;
+                margin-left: 68px;
+                a {
+                    margin-right: 6px;
+                }
+            }
+        }
+        .tabs {
+            .tabs-advertising {
+                div {
+                    width: 120px;
+                    height: 34px;
+                    border-radius: 3px;
+                    line-height: 34px;
+                    text-align: center;
+                    background-color: $bgColor;
+                    color: $impTextColor;
+                    margin-right: 10px;
+                }
+                .advertising {
+                    border-radius: 3px 0 0 3px!important;
+                }
+                .advertising-group {
+                    border-radius: 0 3px 3px 0!important;
+                }
+            }
+        }
+    }
+}
+
+.el-breadcrumb {
+    font-size: 14px;
+    line-height: 1;
+}
+.el-form-item{
+    padding-bottom: 20px;
+}

@@ -1,0 +1,169 @@
+@charset "utf-8";
+@import "./base.scss";
+.remote-control {
+    .voice {
+        div:first-child {
+            font-size: 0.28rem;
+            height: .79rem;
+            line-height: .89rem;
+            padding: 0 .22rem;
+            box-sizing: border-box;
+        }
+        .voice-info {
+            background-color: $white;
+            font-size: 0.28rem;
+            height: .97rem;
+            padding-top: .12rem;
+            box-sizing: border-box;
+            .voice-info-start {
+                i {
+                    font-size: 0.6rem;
+                }
+            }
+            .voice-info-end {
+                padding-left: .3rem;
+                box-sizing: border-box;
+                i {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+    .brightness {
+        div:first-child {
+            font-size: 0.28rem;
+            height: .79rem;
+            line-height: .89rem;
+            padding: 0 .22rem;
+            padding-right: .42rem;
+            box-sizing: border-box;
+        }
+        .brightness-info {
+            background-color: $white;
+            font-size: 0.28rem;
+            height: .97rem;
+            padding-top: .12rem;
+            box-sizing: border-box;
+            .brightness-info-start {
+                i {
+                    font-size: 0.4rem;
+                }
+            }
+            .brightness-info-end {
+                padding-left: .3rem;
+                box-sizing: border-box;
+                i {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+    .cacheTime {
+        >div:first-child {
+            font-size: 0.28rem;
+            height: .79rem;
+            line-height: .89rem;
+            padding: 0 .22rem;
+            box-sizing: border-box;
+        }
+        .cacheTime-info {
+            display: flex;
+            padding: 0 .22rem;
+            box-sizing: border-box;
+            height: .97rem;
+            padding-top: .22rem;
+            background-color: $white;
+            .kuang {
+                height: .58rem;
+                width: .58rem;
+                border: 1px solid $sublineColor;
+                box-sizing: border-box;
+                line-height: .48rem;
+                text-align: center;
+                border-radius: .02rem;
+            }
+            .cacheTime-info-content {
+                flex: 1;
+                height: .58rem;
+                border: 1px solid $sublineColor;
+                box-sizing: border-box;
+                line-height: .55rem;
+                text-align: center;
+                border-radius: .02rem;
+                margin: 0 .12rem;
+                font-size: 0.3rem;
+            }
+            .cacheTime-info-left,
+            .cacheTime-info-right {
+                font-size: 0.4rem;
+                height: .58rem;
+                line-height: .55rem;
+            }
+        }
+    }
+    .other {
+        .other-set {
+            font-size: 0.28rem;
+            height: .79rem;
+            line-height: .89rem;
+            padding: 0 .22rem;
+            box-sizing: border-box;
+        }
+        .set-timing-switch {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.28rem;
+            height: .97rem;
+            line-height: .97rem;
+            padding: 0 .22rem;
+            box-sizing: border-box;
+            background-color: $white;
+            border-bottom: 1px solid $sublineColor;
+        }
+        .restart {
+            font-size: 0.28rem;
+            height: .97rem;
+            line-height: .97rem;
+            padding: 0 .22rem;
+            box-sizing: border-box;
+            background-color: $white;
+            border-bottom: 1px solid $sublineColor;
+            display: flex;
+            .restart-right {
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .switch {
+            display: flex;
+            font-size: 0.28rem;
+            height: .97rem;
+            line-height: .97rem;
+            padding: 0 .22rem;
+            box-sizing: border-box;
+            background-color: $white;
+            border-bottom: 1px solid $sublineColor;
+            .switch-right {
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+        .clearCache {
+            display: flex;
+            font-size: 0.28rem;
+            height: .97rem;
+            line-height: .97rem;
+            padding: 0 .22rem;
+            box-sizing: border-box;
+            background-color: $white;
+            border-bottom: 1px solid $sublineColor;
+            .clearCache-right {
+                flex: 1;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}

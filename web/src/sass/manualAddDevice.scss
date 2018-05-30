@@ -1,0 +1,47 @@
+@import "base.scss";
+.manual-add-device {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    .top {
+        line-height: 56px;
+        margin-left: 20px;
+        .crumbs {
+            font-size: 12px;
+        }
+    }
+    .bottom {
+        background-color: $white;
+        padding: 20px;
+        .row1 {
+            padding: 20px;
+            background: $bgColor;
+            .material-name {
+                height: 30px;
+                line-height: 30px;
+                &-left {}
+                &-right {
+                    margin-left: 20px;
+                }
+            }
+            .material-search {
+                margin-left: 77px;
+                margin-top: 20px;
+                a {
+                    margin-right: 6px;
+                }
+            }
+        }
+        .material-manage-file-select {
+            margin: 20px 0;
+            a {
+                margin-right: 6px;
+            }
+        }
+    }
+}
+
+.el-breadcrumb {
+    font-size: 14px;
+    line-height: 1;
+}
