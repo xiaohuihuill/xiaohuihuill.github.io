@@ -23,22 +23,10 @@ For detailed explanation on how things work, checkout the [guide](http://vuejs-t
 
 # 注解
 
-这是一个基于vue+element-ui+jquery+vue-router简单的模板(暂时没有用到vuex很多坑没踩过)
+这是一个基于vue + vue-router + element-ui + ajax 简单的模板(项目中遇到的一些问题，自定义布局，动态表格，图片视频上传OSS)
 
 主要为了解决打包dist目录下js文件包下单个js文件过大
 
-大型框架以及js文件过大都可以采用cdn方式引用
+大型框架以及js文件过大都可以采用cdn方式引用,以及路由懒加载
 
-解决问题主要在以下文件：1、index.html。2、src/main.js。3、build/webpack.conf.base.js。4、package.json。
-
-npm i //  cnpm i
-
-npm run dev
-
-npm run build
-
-npm run build --report
-
-[www.baidu.com](http://www.baidu.com)
-
-``
+解决问题主要在以下文件：1、index.html。2、src/main.js。3、build/webpack.conf.base.js(commonsChunkPlugin)。4、package.json。
